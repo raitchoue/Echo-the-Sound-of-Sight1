@@ -1,0 +1,2521 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>ÉCHO — The Sound of Sight</title>
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImciIGN4PSI2NCIgY3k9IjcwIiByPSI2MCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTAyMDQwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwNjBhIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyOCIgZmlsbD0idXJsKCNnKSIvPjxjaXJjbGUgY3g9IjY0IiBjeT0iNjYiIHI9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiM0NmU2ZmYiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iLjkiLz48Y2lyY2xlIGN4PSI2NCIgY3k9IjY2IiByPSI0NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDZlNmZmIiBzdHJva2Utd2lkdGg9IjIuNSIgb3BhY2l0eT0iLjU1Ii8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NiIgcj0iNTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhiN2JmZiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMzUiLz48cGF0aCBkPSJNNjQgNDRjLTkgMC0xNCA3LTE0IDE2IDAgMTAtMyAxOC02IDI0aDQwYy0zLTYtNi0xNC02LTI0IDAtOS01LTE2LTE0LTE2eiIgZmlsbD0iI2U4ZjFmZiIvPjxjaXJjbGUgY3g9IjY0IiBjeT0iNjYiIHI9IjYiIGZpbGw9IiMwYTBmMWUiLz48cGF0aCBkPSJNNjQgODRjLTQgNi0xMCAxMC0xNCAxMmgyOGMtNC0yLTEwLTYtMTQtMTJ6IiBmaWxsPSIjZThmMWZmIiBvcGFjaXR5PSIuNyIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iMzQiIHI9IjciIGZpbGw9IiNmZjVkN2EiIG9wYWNpdHk9Ii44NSIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iMzQiIHI9IjIiIGZpbGw9IiMwNTA2MGEiLz48L3N2Zz4K" />
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImciIGN4PSI2NCIgY3k9IjcwIiByPSI2MCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMTAyMDQwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDUwNjBhIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHJ4PSIyOCIgZmlsbD0idXJsKCNnKSIvPjxjaXJjbGUgY3g9IjY0IiBjeT0iNjYiIHI9IjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiM0NmU2ZmYiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iLjkiLz48Y2lyY2xlIGN4PSI2NCIgY3k9IjY2IiByPSI0NCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDZlNmZmIiBzdHJva2Utd2lkdGg9IjIuNSIgb3BhY2l0eT0iLjU1Ii8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NiIgcj0iNTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhiN2JmZiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIuMzUiLz48cGF0aCBkPSJNNjQgNDRjLTkgMC0xNCA3LTE0IDE2IDAgMTAtMyAxOC02IDI0aDQwYy0zLTYtNi0xNC02LTI0IDAtOS01LTE2LTE0LTE2eiIgZmlsbD0iI2U4ZjFmZiIvPjxjaXJjbGUgY3g9IjY0IiBjeT0iNjYiIHI9IjYiIGZpbGw9IiMwYTBmMWUiLz48cGF0aCBkPSJNNjQgODRjLTQgNi0xMCAxMC0xNCAxMmgyOGMtNC0yLTEwLTYtMTQtMTJ6IiBmaWxsPSIjZThmMWZmIiBvcGFjaXR5PSIuNyIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iMzQiIHI9IjciIGZpbGw9IiNmZjVkN2EiIG9wYWNpdHk9Ii44NSIvPjxjaXJjbGUgY3g9IjI2IiBjeT0iMzQiIHI9IjIiIGZpbGw9IiMwNTA2MGEiLz48L3N2Zz4K" />
+<style>
+  :root {
+    --bg: #05060a;
+    --ink: #e8f1ff;
+    --cyan: #46e6ff;
+    --violet: #8b7bff;
+    --danger: #ff5d7a;
+    --gold: #ffd166;
+    --green: #5dffb0;
+    --strate-col: 70,230,255;
+    --strate-col2: 139,123,255;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    touch-action: none;
+    -webkit-user-select: none; user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #wrap { position: fixed; inset: 0; }
+  canvas#game { display: block; width: 100%; height: 100%; background: var(--bg); }
+
+  /* ---------- Calques d'ambiance ---------- */
+  #scan {
+    position: fixed; inset: 0; z-index: 7; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,.022) 0 1px, transparent 1px 3px);
+    mix-blend-mode: overlay;
+  }
+  #flicker {
+    position: fixed; inset: 0; z-index: 7; pointer-events: none;
+    background: rgba(70,230,255,.02);
+    animation: flick 7s steps(1) infinite;
+  }
+  @keyframes flick {
+    0%,92%,100% { opacity: 0; }
+    93% { opacity: .5; }
+    94% { opacity: .1; }
+    96% { opacity: .6; }
+    97% { opacity: 0; }
+  }
+
+  /* ---------- HUD ---------- */
+  #hud {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+    padding: 10px 16px;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(3,4,8,.82), rgba(3,4,8,0));
+    z-index: 5;
+  }
+  .hud-chip {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    backdrop-filter: blur(6px);
+  }
+  .hud-chip b { color: rgb(var(--strate-col)); font-variant-numeric: tabular-nums; }
+  #hudStrate { max-width: 30vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: rgb(var(--strate-col2)); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+  #hearts { display: flex; gap: 4px; align-items: center; }
+  .heart { width: 16px; height: 16px; }
+  .bar { width: 96px; height: 10px; border-radius: 999px; background: rgba(255,255,255,.08); overflow: hidden; display:inline-block; }
+  #energyFill { height: 100%; width: 100%; background: linear-gradient(90deg, var(--violet), var(--cyan)); transition: width .15s linear; }
+  #pulseFill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--gold), var(--danger)); transition: width .15s linear; }
+  #spacer { flex: 1; }
+  #hint { font-size: 12px; opacity: .55; }
+  #btnMute, #btnPause {
+    pointer-events: auto; cursor: pointer;
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14);
+    color: var(--ink); border-radius: 999px; padding: 5px 12px; font-size: 14px;
+  }
+  @media (max-width: 640px) { #hint { display: none; } .hud-chip { font-size: 12px; padding: 5px 10px; } #hudStrate { display: none; } }
+
+  /* ---------- Bouton pouls mobile ---------- */
+  #btnPulse {
+    position: fixed; right: 18px; bottom: 22px; z-index: 6;
+    width: 72px; height: 72px; border-radius: 50%;
+    border: 2px solid rgba(255,209,102,.6);
+    background: radial-gradient(circle at 35% 30%, rgba(255,209,102,.35), rgba(255,93,122,.2));
+    color: var(--ink); font-size: 26px; display: none;
+    align-items: center; justify-content: center;
+    box-shadow: 0 0 22px rgba(255,209,102,.25);
+    animation: beatbtn 1.6s ease-in-out infinite;
+  }
+  @keyframes beatbtn { 0%,100% { box-shadow: 0 0 18px rgba(255,209,102,.2);} 50% { box-shadow: 0 0 34px rgba(255,209,102,.45);} }
+  #btnPulse:active { transform: scale(.92); }
+  @media (pointer: coarse) { #btnPulse.on { display: flex; } }
+
+  /* ---------- Écrans ---------- */
+  .screen {
+    position: fixed; inset: 0; z-index: 10;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px; text-align: center; padding: 24px;
+    background: radial-gradient(ellipse at 50% 40%, rgba(20,30,60,.55), rgba(3,4,8,.94) 70%);
+    backdrop-filter: blur(4px);
+    transition: opacity .4s;
+    overflow-y: auto;
+  }
+  .screen.hidden { opacity: 0; pointer-events: none; }
+
+  /* ---------- Cinématiques ---------- */
+  .cineLetter {
+    position: fixed; left: 0; right: 0; z-index: 9; pointer-events: none;
+    height: 12vh; background: #000;
+    transition: transform .8s ease;
+  }
+  .cineLetter.top { top: 0; transform: translateY(-100%); }
+  .cineLetter.bot { bottom: 0; transform: translateY(100%); }
+  body.in-cine .cineLetter.top { transform: translateY(0); }
+  body.in-cine .cineLetter.bot { transform: translateY(0); }
+  #cineSub {
+    position: fixed; left: 0; right: 0; bottom: 16vh; z-index: 9;
+    pointer-events: none; text-align: center;
+    font-size: clamp(16px, 2.6vw, 24px); font-weight: 300; font-style: italic;
+    letter-spacing: .06em; color: #dfeaff;
+    text-shadow: 0 0 14px rgba(70,180,255,.45);
+    padding: 0 24px; transition: opacity .3s;
+  }
+  #cineSub::after { content: "▍"; margin-left: 2px; animation: caret 1s steps(1) infinite; color: rgb(var(--strate-col2)); }
+  @keyframes caret { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+  #cineSub.done::after { content: ""; }
+  #btnSkip {
+    position: fixed; right: 20px; top: 18px; z-index: 11;
+    pointer-events: auto; cursor: pointer;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.2);
+    color: var(--ink); border-radius: 999px; padding: 7px 18px;
+    font-size: 13px; letter-spacing: .15em; opacity: .6;
+    transition: opacity .2s, box-shadow .2s;
+  }
+  #btnSkip:hover { opacity: 1; box-shadow: 0 0 14px rgba(70,230,255,.3); }
+  body.in-cine #btnPulse { display: none !important; }
+  body.in-cine #hud { visibility: hidden !important; }
+  @media (pointer: coarse) {
+    #btnSkip { padding: 12px 26px; font-size: 15px; opacity: .85; top: 64px; right: 16px; }
+  }
+  .hidden2 { display: none !important; }
+  @keyframes breathe {
+    0%,100% { filter: brightness(1); text-shadow: none; transform: scale(1); }
+    50% { filter: brightness(1.15); transform: scale(1.015); }
+  }
+
+    0%,100% { filter: brightness(1); text-shadow: none; transform: scale(1); }
+    50% { filter: brightness(1.15); transform: scale(1.015); }
+  }
+  .screen h1 {
+    font-size: clamp(40px, 9vw, 84px);
+    font-weight: 800; letter-spacing: .12em;
+    background: linear-gradient(90deg, var(--violet), var(--cyan), var(--violet));
+    background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: breathe 5s ease-in-out infinite, gradientSlide 9s linear infinite;
+  }
+  @keyframes gradientSlide { to { background-position: 200% center; } }
+  .screen h1 small { display:block; font-size: clamp(12px,2.5vw,18px); letter-spacing: .5em; color: var(--ink); -webkit-text-fill-color: var(--ink); margin-top: 6px; font-weight: 300; }
+  .screen p { max-width: 540px; line-height: 1.6; opacity: .8; font-size: 15px; }
+  .btn {
+    pointer-events: auto; cursor: pointer;
+    border: 1px solid rgba(70,230,255,.5);
+    background: linear-gradient(180deg, rgba(70,230,255,.18), rgba(139,123,255,.14));
+    color: var(--ink);
+    font-size: 17px; font-weight: 600; letter-spacing: .1em;
+    padding: 13px 42px; border-radius: 999px;
+    transition: transform .12s, box-shadow .12s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn:hover, .btn:active { transform: scale(1.05); box-shadow: 0 0 24px rgba(70,230,255,.35); }
+  .keys { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 580px; }
+  .key {
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14);
+    border-radius: 10px; padding: 8px 12px; font-size: 13px; opacity: .85;
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; font-size: 13px; opacity: .75; }
+  .dot { display:inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+  #strateTitle { color: rgb(var(--strate-col2)); letter-spacing: .3em; text-transform: uppercase; font-size: clamp(14px,3vw,20px); font-weight: 300; }
+  #strateLore { font-style: italic; opacity: .6; max-width: 520px; }
+  #finalStats { font-size: 18px; line-height: 2; }
+  #finalStats b { color: var(--gold); }
+  #vibrateWarn { display:none; font-size:12px; opacity:.4; }
+  @media (pointer: coarse) { #vibrateWarn { display: block; } }
+  #bestScore { color: var(--gold); }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game"></canvas></div>
+<div id="scan"></div>
+<div id="flicker"></div>
+
+<div id="cineLetterTop" class="cineLetter top hidden2"></div>
+<div id="cineLetterBot" class="cineLetter bot hidden2"></div>
+<div id="cineSub" style="opacity:0"></div>
+<button id="btnSkip" class="hidden2">PASSER ▸</button>
+
+<div id="hud" style="visibility:hidden">
+  <div class="hud-chip">NIVEAU <b id="hudLevel">1</b></div>
+  <div class="hud-chip" id="hudStrate">—</div>
+  <div class="hud-chip">◆ <b id="hudOrbs">0/0</b></div>
+  <div class="hud-chip" id="hearts"></div>
+  <div class="hud-chip" style="display:flex;align-items:center;gap:8px">SONAR&nbsp;<span class="bar"><span id="energyFill" style="display:block"></span></span></div>
+  <div class="hud-chip" style="display:flex;align-items:center;gap:8px">POULS&nbsp;<span class="bar"><span id="pulseFill" style="display:block"></span></span></div>
+  <div id="spacer"></div>
+  <div id="hint">Espace : onde • E : pouls • Maj : silence • P : pause • M : son</div>
+  <button id="btnMute" title="Son (M)">🔊</button>
+  <button id="btnPause" title="Pause (P)">⏸</button>
+</div>
+
+<button id="btnPulse" class="on" type="button" title="Pouls">💥</button>
+
+<div class="screen" id="screenStart">
+  <h1>ÉCHO<small>THE SOUND OF SIGHT</small></h1>
+  <p>Tu es une <b>Écouteuse</b>, née sans yeux dans les profondeurs de la Faille.
+     Seules tes <b>ondes sonores</b> révèlent le monde, quelques secondes à la fois.
+     Mais chaque onde réveille les <b style="color:var(--danger)">Spectres</b>, qui remontent la source du son pour te dévorer.
+     Récolte les orbes de mémoire, déverrouille le portail, et descends de strate en strate vers la Première Voix.</p>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--cyan)"></span>Orbe (100 pts)</span>
+    <span><span class="dot" style="background:var(--green)"></span>Écho : +1 charge sonar</span>
+    <span><span class="dot" style="background:var(--danger)"></span>Cœur : +1 vie</span>
+    <span><span class="dot" style="background:var(--gold)"></span>Portail</span>
+  </div>
+  <div class="keys">
+    <div class="key">ZQSD / WASD / Flèches : se déplacer</div>
+    <div class="key">Espace ou clic : onde sonore</div>
+    <div class="key">E : pouls (repousse les Spectres proches)</div>
+    <div class="key">Maj : marcher en silence</div>
+    <div class="key">P : pause • M : son</div>
+    <div class="key">Mobile : glisser à gauche = déplacement, à droite = sonar, bouton 💥 = pouls</div>
+  </div>
+  <p id="strateLore">« Le silence n'est pas l'absence. C'est l'attente. » — Grimoire des Écouteuses, fragment I</p>
+  <p id="bestScoreLine" style="display:none">Meilleur score : <b id="bestScore">0</b></p>
+  <button class="btn" id="btnStart" data-action="start" onclick="if(window.actionStart)window.actionStart()">DESCENDRE &nbsp;(Entrée / Espace)</button>
+  <p style="opacity:.55;font-size:13px">Si le clic ne répond pas, appuie sur <b style="color:var(--gold)">Entrée</b> ou <b style="color:var(--gold)">Espace</b>.</p>
+  <div id="vibrateWarn">Astuce : portrait ou paysage, le jeu s'adapte.</div>
+</div>
+
+<div class="screen hidden" id="screenLevel">
+  <h1 style="font-size:clamp(30px,6vw,56px)">STRATE <span id="lvlDone">1</span> FRANCHIE</h1>
+  <p id="lvlMsg"></p>
+  <p id="lvlLore" style="font-style:italic;opacity:.55"></p>
+  <button class="btn" id="btnNext" data-action="next" onclick="if(window.actionNext)window.actionNext()">DESCENDRE &nbsp;(Entrée / Espace)</button>
+  <p style="opacity:.55;font-size:13px">Appuie sur <b style="color:var(--gold)">Entrée</b> ou <b style="color:var(--gold)">Espace</b> pour descendre.</p>
+</div>
+
+<div class="screen hidden" id="screenOver">
+  <h1 style="font-size:clamp(34px,7vw,64px)">DÉVORÉE</h1>
+  <p id="deathQuote" style="font-style:italic;opacity:.6"></p>
+  <div id="finalStats"></div>
+  <button class="btn" id="btnRetry" data-action="retry" onclick="if(window.actionRetryStrate)window.actionRetryStrate()">RÉESSAYER LA STRATE &nbsp;(Entrée / Espace)</button>
+  <button class="btn" id="btnBackOne" onclick="if(window.actionRestart)window.actionRestart()" style="padding:9px 28px;font-size:14px;border-color:rgba(255,255,255,.25)">REVENIR À LA PREMIÈRE STRATE</button>
+  <p style="opacity:.55;font-size:13px">Appuie sur <b style="color:var(--gold)">Entrée</b> ou <b style="color:var(--gold)">Espace</b> pour recommencer.</p>
+</div>
+
+<div class="screen hidden" id="screenEnd">
+  <h1 style="font-size:clamp(30px,6.5vw,60px)">LA PREMIÈRE VOIX</h1>
+  <p id="endQuote1" style="opacity:.85"></p>
+  <p id="endQuote2" style="font-style:italic;opacity:.6"></p>
+  <div id="endStats"></div>
+  <button class="btn" id="btnAgain" data-action="retry" onclick="if(window.actionRestart)window.actionRestart()">REPLONGER &nbsp;(Entrée / Espace)</button>
+</div>
+
+<div class="screen hidden" id="screenPause">
+  <h1 style="font-size:clamp(30px,6vw,56px)">PAUSE</h1>
+  <p>Les Spectres attendent, immobiles, l'oreille tendue. Prends ton souffle.</p>
+  <button class="btn" id="btnResume" data-action="resume">REPRENDRE &nbsp;(Entrée / Espace)</button>
+</div>
+
+<script>
+"use strict";
+/* =========================================================
+   ÉCHO — The Sound of Sight — édition "Strates"
+   Identité ajoutée :
+   - 5 Strates nommées, avec lore, palette et ambiance propres
+   - Nappe sonore ambiante (drone) réactive au danger
+   - Deux types de Spectres : Chasseurs et Sentinelles
+   - Poussière en suspension, traînée du joueur, faille vivante
+   - Citations, murmures aléatoires, grain et scintillement d'écran
+   ========================================================= */
+
+// ---------- Constantes de gameplay ----------
+const PING_SPEED = 340;
+const PING_MAX_R = 900;
+const PINGS_MAX = 3;
+const PING_REGEN = 2.4;
+const LIGHT_FADE = 3.2;
+const BASE_CELL = 64;
+const PLAYER_R = 12;
+const ORB_R = 9;
+const PULSE_RADIUS = 210;
+const PULSE_REGEN = 24;
+const PULSE_STUN = 4.5;
+
+// ---------- Identité : les Strates ----------
+const STRATES = [
+  {
+    name: "Cendres de l'Aube",
+    lore: "Ici reposent les premières voix, éteintes avant même d'avoir chanté.",
+    wall: "120,190,255", ping: "70,230,255", ambient: 174, dangerCol: "180,20,50"
+  },
+  {
+    name: "Catacombes Murmurantes",
+    lore: "Les murs retiennent des prières que personne n'a jamais prononcées.",
+    wall: "150,170,255", ping: "110,200,255", ambient: 146, dangerCol: "180,20,60"
+  },
+  {
+    name: "Le Chœur Perdu",
+    lore: "Sept chanteurs sont entrés. Les échos sont huit, désormais.",
+    wall: "139,123,255", ping: "150,160,255", ambient: 196, dangerCol: "200,25,70"
+  },
+  {
+    name: "Grave Sillage",
+    lore: "Plus bas, la nuit devient épaisse. Elle avale les sons avant toi.",
+    wall: "110,220,200", ping: "80,235,200", ambient: 130, dangerCol: "210,20,70"
+  },
+  {
+    name: "La Première Voix",
+    lore: "On dit qu'elle t'appelle par ton nom depuis toujours. Tu ne l'as jamais entendu.",
+    wall: "255,205,120", ping: "255,209,102", ambient: 110, dangerCol: "230,30,60"
+  }
+];
+function strateOf(level) { return STRATES[(level - 1) % STRATES.length]; }
+
+const SWARM_WHISPERS = [
+  "…elle descend…", "…j'entends ton souffle…", "…reste… reste…",
+  "…la lumière te trahit…", "…nous sommes nombreux…", "…le son, le son…"
+];
+
+const DEATH_QUOTES = [
+  "« Ton dernier cri a fait un bel écho. »",
+  "« Les Spectres ont maintenant ta voix. »",
+  "« La Faille garde tout ce qu'on lui confie. »",
+  "« Personne n'entend les chutes, ici-bas. »"
+];
+
+// Noms des Spectres : chaque rencontre devient un événement
+const SPECTRE_NAMES = [
+  "Celui-qui-a-attendu", "La Neuvième Voix", "Celui-que-le-silence-nourrit",
+  "La Faim Douce", "Le Compteur de Souffles", "Celle-qui-revient",
+  "L'Oreille Jardee", "Le Mur qui Respire", "Ce-qui-nage-sous-le-sol",
+  "La Dernière Question", "Le Frère de l'Écho", "Celle-qui-compte tes pas"
+];
+let nameBag = [];
+function spectreName() {
+  if (!nameBag.length) nameBag = shuffle(SPECTRE_NAMES.slice());
+  return nameBag.pop();
+}
+
+// Cinématique de fin
+const CINE_FIN = [
+  { txt: "Tu ne sais plus depuis combien de strates tu descends.", dur: 3.4, visual: "voix" },
+  { txt: "Puis le silence change : il ne vient plus d'en bas. Il t'entoure.", dur: 3.8, visual: "voix" },
+  { txt: "« Te voilà », dit la Faille. « Je t'entendais depuis toujours. »", dur: 3.8, visual: "voix" },
+  { txt: "La voix n'est pas celle d'une inconnue. Elle a la chaleur de ta propre gorge.", dur: 4, visual: "voix" },
+  { txt: "Et pour la première fois de ta vie, tu entends ton propre nom.", dur: 4, visual: "voix" },
+  { txt: "La Première Voix n'a jamais été au fond de la Faille.", dur: 3.8, visual: "voix" },
+  { txt: "Elle est toi. Depuis le tout premier écho.", dur: 4, visual: "voix" },
+  { txt: "Ta berceuse, enfin haute et claire, remonte la Faille par-delà les strates.", dur: 4, visual: "voix" },
+  { txt: "Quelque part très haut, une main referme enfin une porte.", dur: 4, visual: "voix" }
+];
+const ENDING_TXT = [
+  "La lumière t'apprend enfin une chose que l'obscurité savait déjà :",
+  "on ne voit pas avec les yeux. On voit avec ce qui nous écoute en retour."
+];
+
+const GAME_END_LEVEL = 30;
+
+// L'histoire, un fragment par descente (strates 2 à 30)
+const HISTOIRE = [
+  "Tu ne te souviens pas d'être née. Seulement d'une voix, très haut, qui t'a dit : descends.",
+  "Les Écouteuses ne descendent jamais deux fois. Toi, tu sembles y être née.",
+  "Une pensée étrange te traverse : ces murs connaissent ton poids.",
+  "Tu rêves d'une main qui referme une porte. La tienne ?",
+  "Ici, chaque orbe porte un nom. Certains ressemblent au tien.",
+  "Les Spectres s'écartent parfois quand tu passes. Comme s'ils te reconnaissaient.",
+  "La Faille n'est pas un trou. C'est une gorge. Elle attend que tu parles.",
+  "Tu comprends enfin : tu n'es pas descendue pour fuir. Tu es descendue parce qu'on t'appelle.",
+  "Le battement devient proche. Il bat comme le tien, en avance d'un temps.",
+  "Ta mère était Écouteuse, elle aussi. C'est elle qui a poussé la porte d'en haut.",
+  "Elle n'est jamais remontée. La Première Voix chantait si juste…",
+  "Tu portes son souffle. Tu portes son silence. Tu portes son dernier chant.",
+  "Une dernière strate. Elle n'attend que ta voix pour finir de se souvenir.",
+  "La lumière, en bas, n'éclaire pas. Elle te tend les bras.",
+  // Acte IV — la Faille se révèle (16-20)
+  "Tu sais qui tu es. Reste à savoir pourquoi la Faille te laisse descendre.",
+  "Chaque strate revue est différente. La Faille se réinvente pour toi.",
+  "Les Spectres ne sont pas tes ennemis. Ce sont des auditeurs éblouis.",
+  "Un orbe murmure ton enfance. Tu ne l'avais jamais vécue.",
+  "Battement. Toujours en avance. Comme s'il savait ce que tu allais entendre.",
+  // Acte V — la mère (21-30)
+  "Les échos d'ici chantent faux exprès : ils gardent une note pour toi.",
+  "Tu croises une Écouteuse fossilisée. Elle tient encore son dernier orbe.",
+  "C'était elle. Ta mère est descendue jusqu'ici, avant toi.",
+  "Son orbe t'appelle. Il chante une berceuse que tu n'as jamais apprise.",
+  "Tu la connais. Tu la fredonnais en dormant, avant même de savoir chanter.",
+  "La Faille se creuse moins vite. Ou tu deviens plus légère ?",
+  "Les murs résonnent désormais même quand tu ne dis rien.",
+  "Tu n'as plus peur des Spectres. Tu as peur de finir.",
+  "Finir, ici, voudrait dire remonter. Ou cesser d'être un écho.",
+  "Encore un pas, et tu entendras ce que personne n'a entendu : ton propre premier chant."
+];
+
+// Cinématique de mort, jouée après le slow-mo
+function CINE_MORT() {
+  return [
+    { txt: "Ton onde s'éteint en chemin. Personne pour l'entendre.", dur: 3.2, visual: "spectre" },
+    { txt: "L'obscurité se referme sur toi comme une eau noire.", dur: 3.2, visual: "mort" },
+    { txt: DEATH_QUOTES[(Math.random() * DEATH_QUOTES.length) | 0], dur: 3.2, visual: "mort" }
+  ];
+}
+
+// ---------- Canvas ----------
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+let W = 0, H = 0;
+
+function resize() {
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W * DPR; canvas.height = H * DPR;
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  if (S.cells) fitMaze();
+}
+window.addEventListener("resize", resize);
+
+// ---------- Audio ----------
+let AC = null;
+let muted = false;
+function audio() {
+  if (!AC) {
+    try { AC = new (window.AudioContext || window.webkitAudioContext)(); }
+    catch (e) { AC = null; }
+  }
+  if (AC && AC.state === "suspended") AC.resume();
+  return AC;
+}
+function tone(freq, dur, type, vol, slideTo, when, pan) {
+  if (muted) return;
+  const ac = audio(); if (!ac) return;
+  const t = ac.currentTime + (when || 0);
+  const o = ac.createOscillator(), g = ac.createGain();
+  o.type = type || "sine";
+  o.frequency.setValueAtTime(freq, t);
+  if (slideTo) o.frequency.exponentialRampToValueAtTime(slideTo, t + dur);
+  g.gain.setValueAtTime(0, t);
+  g.gain.linearRampToValueAtTime(vol || 0.12, t + 0.01);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g);
+  let out = g;
+  if (typeof pan === "number" && ac.createStereoPanner) {
+    try { const pn = ac.createStereoPanner(); pn.pan.value = Math.max(-1, Math.min(1, pan)); g.connect(pn); out = pn; } catch (e) {}
+  }
+  out.connect(ac.destination);
+  o.start(t); o.stop(t + dur + 0.05);
+}
+const sfx = {
+  ping:    function () { tone(880, 0.5, "sine", 0.16, 220); tone(1760, 0.18, "sine", 0.05); },
+  orb:     function () { tone(660, 0.12, "triangle", 0.14); tone(990, 0.18, "triangle", 0.12, null, 0.09); },
+  unlock:  function () { tone(330, 0.3, "triangle", 0.14); tone(440, 0.3, "triangle", 0.14, null, 0.18); tone(660, 0.5, "triangle", 0.16, null, 0.36); },
+  hurt:    function () { tone(200, 0.35, "sawtooth", 0.18, 60); },
+  monster: function (type, pan) {
+    if (type === "sentinel") tone(70 + Math.random() * 30, 0.5, "triangle", 0.07, 50, 0, pan);
+    else tone(90 + Math.random() * 40, 0.25, "sawtooth", 0.06, 55, 0, pan);
+  },
+  step:    function () { tone(220 + Math.random() * 30, 0.05, "sine", 0.025); },
+  next:    function () { tone(523, 0.2, "triangle", 0.14); tone(659, 0.2, "triangle", 0.14, null, 0.15); tone(784, 0.35, "triangle", 0.16, null, 0.3); },
+  over:    function () { tone(220, 0.8, "sawtooth", 0.16, 55); },
+  empty:   function () { tone(160, 0.1, "sine", 0.05); },
+  pulse:   function () { tone(140, 0.6, "sine", 0.22, 40); tone(300, 0.2, "triangle", 0.1, 100); },
+  dash:    function () { tone(420, 0.18, "sine", 0.09, 160); },
+  shout:   function () { tone(160, 0.6, "sawtooth", 0.14, 420); tone(90, 0.6, "sawtooth", 0.1, 260); },
+  heart:   function () { tone(520, 0.15, "triangle", 0.14); tone(780, 0.2, "triangle", 0.12, null, 0.12); },
+  beat:    function () { tone(60, 0.15, "sine", 0.3, 45); },
+  whisper: function () { tone(300 + Math.random() * 500, 0.7, "sine", 0.02, 200 + Math.random() * 300); }
+};
+
+// ---------- Nappe sonore ambiante (drone) ----------
+const ambient = { nodes: null, tension: 0 };
+function startAmbient() {
+  const ac = audio(); if (!ac || ambient.nodes) return;
+  const g = ac.createGain(); g.gain.value = 0.0;
+  const filter = ac.createBiquadFilter(); filter.type = "lowpass"; filter.frequency.value = 400; filter.Q.value = 2;
+  const oscs = [];
+  const base = strateOf(S.level).ambient || 130;
+  [0.5, 1, 1.007, 1.5].forEach(function (mult, i) {
+    const o = ac.createOscillator();
+    o.type = i === 3 ? "sawtooth" : "sine";
+    o.frequency.value = base * mult;
+    const og = ac.createGain(); og.gain.value = i === 3 ? 0.05 : 0.14;
+    o.connect(og); og.connect(filter);
+    o.start(); oscs.push(o);
+  });
+  const lfo = ac.createOscillator(); lfo.frequency.value = 0.13;
+  const lfoG = ac.createGain(); lfoG.gain.value = 60;
+  lfo.connect(lfoG); lfoG.connect(filter.frequency); lfo.start();
+  filter.connect(g); g.connect(ac.destination);
+  ambient.nodes = { g: g, filter: filter, oscs: oscs, base: base };
+  g.gain.linearRampToValueAtTime(muted ? 0 : 0.05, ac.currentTime + 3);
+}
+function updateAmbient() {
+  if (!ambient.nodes || muted) return;
+  const target = 200 + S.danger * 900;
+  ambient.nodes.filter.frequency.value += (target - ambient.nodes.filter.frequency.value) * 0.05;
+  ambient.nodes.g.gain.value += ((0.045 + S.danger * 0.05) - ambient.nodes.g.gain.value) * 0.05;
+}
+function stopAmbient() {
+  if (!ambient.nodes) return;
+  try {
+    const ac = AC;
+    ambient.nodes.g.gain.linearRampToValueAtTime(0, ac.currentTime + 0.8);
+    const n = ambient.nodes;
+    setTimeout(function () { n.oscs.forEach(function (o) { try { o.stop(); } catch (e) {} }); }, 1000);
+  } catch (e) {}
+  ambient.nodes = null;
+}
+
+// ---------- Cinématiques ----------
+const CINE = {
+  active: false,
+  lines: [],
+  idx: 0,
+  t: 0,               // temps dans la réplique courante
+  chars: 0,           // caractères révélés (typewriter)
+  onDone: null,
+  visual: "faille"    // faille | spectre | descente | Coeur
+};
+
+const CINE_INTRO = [
+  { txt: "Elle est née sans yeux, au fond de la Faille.", dur: 3.2, visual: "faille" },
+  { txt: "On lui a appris à voir avec ses oreilles.", dur: 3.2, visual: "faille" },
+  { txt: "Mais ici-bas, tout ce qui émet… est entendu.", dur: 3.4, visual: "spectre" },
+  { txt: "« Vois-nous », murmurent les Spectres. Elle a compris", dur: 3.2, visual: "spectre" },
+  { txt: "qu'il ne faut jamais se montrer.", dur: 2.6, visual: "spectre" },
+  { txt: "Récolte les souvenirs. Descends. Trouve la Première Voix.", dur: 3.4, visual: "faille" }
+];
+
+function descenteCine(nextLevel) {
+  const st = strateOf(nextLevel);
+  const L = [
+    { txt: "Tu descends. Les voix ci-dessus s'éteignent une à une.", dur: 3, visual: "descente" },
+    { txt: HISTOIRE[nextLevel - 2] || "La Faille s'approfondit.", dur: 3.8, visual: "descente" },
+    { txt: st.lore, dur: 3.2, visual: "descente" }
+  ];
+  // Événements marquants du récit
+  if (nextLevel === GAME_END_LEVEL) {
+    L.push({ txt: "En bas, la lumière t'attend. Elle connaît ta marche.", dur: 3.4, visual: "voix" });
+  } else if (nextLevel % 5 === 0) {
+    L.push({ txt: "Soudain, un battement. Pas le tien.", dur: 2.8, visual: "spectre" });
+  }
+  return L;
+}
+
+function startCine(lines, onDone) {
+  CINE.active = true;
+  CINE.lines = lines;
+  CINE.idx = 0;
+  CINE.t = 0;
+  CINE.chars = 0;
+  CINE.onDone = onDone;
+  S.mode = "cine";
+  document.body.classList.add("in-cine");
+  const bs = document.getElementById("btnSkip");
+  if (bs) bs.classList.remove("hidden2");
+  hideAllScreens();
+  sfx.beat();
+}
+function endCine() {
+  if (!CINE.active) return;   // évite les doubles sauts (tap multiple sur PASSER)
+  CINE.active = false;
+  S.inputGrace = 0.35;        // avale les taps parasites juste après la cinématique
+  document.body.classList.remove("in-cine");
+  const bs = document.getElementById("btnSkip");
+  if (bs) bs.classList.add("hidden2");
+  const sub = document.getElementById("cineSub");
+  if (sub) sub.style.opacity = "0";
+  const done = CINE.onDone;
+  CINE.onDone = null;
+  if (done) done();
+}
+function cineNext() {
+  if (!CINE.active) return;
+  const line = CINE.lines[CINE.idx];
+  if (CINE.chars < line.txt.length) {
+    CINE.chars = line.txt.length;   // révéler tout de suite
+    return;
+  }
+  CINE.idx++;
+  if (CINE.idx >= CINE.lines.length) endCine();
+  else { CINE.t = 0; CINE.chars = 0; sfx.whisper(); }
+}
+function updateCine(dt) {
+  if (!CINE.active) return;
+  CINE.t += dt;
+  const line = CINE.lines[CINE.idx];
+  if (!line) { endCine(); return; }
+  CINE.chars = Math.min(line.txt.length, Math.floor(CINE.t * 26));
+  const sub = document.getElementById("cineSub");
+  if (sub) {
+    sub.style.opacity = "1";
+    sub.textContent = line.txt.slice(0, CINE.chars);
+    if (CINE.chars >= line.txt.length && line.txt.length > 0) {
+      sub.classList.add("done");
+      if (CINE.t > line.dur + 0.8) cineNext();
+    } else {
+      sub.classList.remove("done");
+    }
+  }
+}
+
+// Silhouette de l'Écouteuse pour les cinématiques (même design qu'en jeu)
+function drawEcouteuse(x, y, sc, alpha, fading) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(sc, sc);
+  ctx.globalAlpha = alpha;
+  const r = 12;
+  const aura = ctx.createRadialGradient(0, 0, 2, 0, 0, 30);
+  aura.addColorStop(0, "rgba(200,240,255," + (0.25 * alpha * (fading ? 0.4 : 1)).toFixed(3) + ")");
+  aura.addColorStop(1, "rgba(200,240,255,0)");
+  ctx.fillStyle = aura;
+  ctx.beginPath(); ctx.arc(0, 0, 30, 0, Math.PI * 2); ctx.fill();
+  // cape : goutte effilée vers l'arrière, capuche sombre
+  ctx.beginPath();
+  ctx.moveTo(r + 1, 0);
+  ctx.quadraticCurveTo(r - 2, -r + 1, -r + 2, -r * 0.25);
+  ctx.quadraticCurveTo(-r - 7, 0, -r + 2, r * 0.25);
+  ctx.quadraticCurveTo(r - 2, r - 1, r + 1, 0);
+  ctx.fillStyle = "rgba(240,250,255," + (0.9 * alpha).toFixed(3) + ")";
+  ctx.shadowColor = "rgba(200,240,255,.9)"; ctx.shadowBlur = 22;
+  ctx.fill(); ctx.shadowBlur = 0;
+  ctx.beginPath();
+  ctx.arc(r * 0.25, 0, r * 0.55, 0, Math.PI * 2);
+  ctx.fillStyle = "rgba(10,15,30," + (0.85 * alpha).toFixed(3) + ")";
+  ctx.fill();
+  ctx.restore();
+}
+
+// Rendu visuel des cinématiques
+function renderCine() {
+  const line = CINE.lines[CINE.idx];
+  const visual = line ? line.visual : "faille";
+  const lineDur = CINE.t;
+  ctx.fillStyle = "#020307";
+  ctx.fillRect(0, 0, W, H);
+
+  const cx = W / 2, cy = H * 0.45;
+
+  // Poussière partagée avec le menu
+  ctx.save();
+  for (let i = 0; i < menuMotes.length; i++) {
+    const m = menuMotes[i];
+    ctx.globalAlpha = 0.05 + 0.08 * (0.5 + 0.5 * Math.sin(m.tw + S.time * 2));
+    ctx.fillStyle = "rgba(120,200,255,1)";
+    ctx.beginPath(); ctx.arc(m.x * W, (m.y + S.time * 0.01) % 1 * H, m.s, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.restore();
+
+  if (visual === "faille") {
+    // Une lueur lointaine qui respire + ondes revenant de très loin
+    const gl = 0.5 + 0.5 * Math.sin(S.time * 1.2);
+    const g = ctx.createRadialGradient(cx, cy, 4, cx, cy, Math.min(W, H) * 0.5);
+    g.addColorStop(0, "rgba(70,180,255," + (0.10 + gl * 0.25).toFixed(3) + ")");
+    g.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    for (let k = 0; k < 3; k++) {
+      const r = ((S.time * 90 + k * 220) % 700) + 10;
+      const a = Math.max(0, 0.22 * (1 - r / 720));
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(70,230,255," + a.toFixed(3) + ")";
+      ctx.lineWidth = 1.5; ctx.stroke();
+    }
+  } else if (visual === "spectre") {
+    // Spectre cinématique : grand, aura, chevilles ondulantes, il approche par vagues
+    const ph = (S.time * 0.35) % 1;
+    const dist = 1 - ph;
+    const sc = 0.5 + dist * 1.8;
+    const alpha = 0.15 + 0.55 * Math.sin(ph * Math.PI);
+    const gx = cx + Math.sin(S.time * 0.8) * 30;
+    const gy = cy + Math.cos(S.time * 0.6) * 18;
+    // traînée derrière lui
+    ctx.save();
+    for (let tt = 1; tt <= 4; tt++) {
+      ctx.globalAlpha = alpha * 0.12;
+      ctx.fillStyle = "rgba(255,93,122,1)";
+      ctx.beginPath();
+      ctx.arc(gx + Math.sin(S.time * 0.8 + tt * 0.25) * 30 * 0.25 * tt, gy + tt * 26, 14 * (1 - tt / 5), 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.restore();
+    ctx.save();
+    ctx.translate(gx, gy); ctx.scale(sc, sc);
+    ctx.globalAlpha = alpha;
+    // aura
+    const caura = ctx.createRadialGradient(0, -4, 4, 0, -4, 46);
+    caura.addColorStop(0, "rgba(255,93,122," + (0.3 * alpha).toFixed(3) + ")");
+    caura.addColorStop(1, "rgba(255,93,122,0)");
+    ctx.fillStyle = caura;
+    ctx.beginPath(); ctx.arc(0, -4, 46, 0, Math.PI * 2); ctx.fill();
+    // corps cape à chevilles ondulantes + dégradé
+    const bodyGrad = ctx.createRadialGradient(0, -4, 2, 0, 4, 30);
+    bodyGrad.addColorStop(0, "rgba(255,240,245," + (0.9 * alpha).toFixed(3) + ")");
+    bodyGrad.addColorStop(0.45, "rgba(255,93,122," + (0.95 * alpha).toFixed(3) + ")");
+    bodyGrad.addColorStop(1, "rgba(255,93,122,0.05)");
+    ctx.beginPath();
+    ctx.moveTo(0, -24 + Math.sin(S.time * 3) * 3);
+    ctx.quadraticCurveTo(24, -8, 18, 22);
+    ctx.quadraticCurveTo(14, 27 + Math.sin(S.time * 2) * 3, 10, 23);
+    ctx.quadraticCurveTo(5, 28 + Math.cos(S.time * 2.3) * 3, 0, 23);
+    ctx.quadraticCurveTo(-5, 28 + Math.sin(S.time * 2.5 + 2) * 3, -10, 23);
+    ctx.quadraticCurveTo(-14, 27 - Math.sin(S.time * 2) * 3, -18, 22);
+    ctx.quadraticCurveTo(-24, -8, 0, -24 + Math.sin(S.time * 3) * 3);
+    ctx.fillStyle = bodyGrad;
+    ctx.shadowColor = "rgba(255,93,122,1)"; ctx.shadowBlur = 44;
+    ctx.fill(); ctx.shadowBlur = 0;
+    // yeux rouges brillants qui te fixent
+    ctx.fillStyle = "rgba(10,5,15,.95)";
+    ctx.beginPath(); ctx.arc(-7, -6, 3.5, 0, Math.PI * 2); ctx.arc(7, -6, 3.5, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = "rgba(255,120,140," + (0.9 * alpha).toFixed(3) + ")";
+    ctx.beginPath(); ctx.arc(-7, -6, 1.4, 0, Math.PI * 2); ctx.arc(7, -6, 1.4, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+    // battement de cœur visuel
+    const beat = Math.pow(Math.max(0, Math.sin(S.time * 2.4)), 6);
+    const dg = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.25, W / 2, H / 2, Math.max(W, H) * 0.7);
+    dg.addColorStop(0, "rgba(0,0,0,0)");
+    dg.addColorStop(1, "rgba(180,20,50," + (0.35 * beat).toFixed(3) + ")");
+    ctx.fillStyle = dg; ctx.fillRect(0, 0, W, H);
+  } else if (visual === "mort") {
+    // La lueur de l'Écouteuse s'éteint, les anneaux se renferment vers elle
+    const fade = Math.max(0, 1 - (CINE.t * 0.25 + CINE.idx * 0.25));
+    const g3 = ctx.createRadialGradient(cx, H * 0.5, 2, cx, H * 0.5, Math.min(W, H) * 0.4);
+    g3.addColorStop(0, "rgba(200,235,255," + (0.3 * fade).toFixed(3) + ")");
+    g3.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g3; ctx.fillRect(0, 0, W, H);
+    // silhouette qui s'affaisse
+    const drop = (CINE.idx * 6 + CINE.t * 4) > 6 ? 6 : CINE.idx * 6 + CINE.t * 4;
+    ctx.save();
+    ctx.translate(cx, H * 0.5 + drop);
+    ctx.rotate(drop * 0.05);
+    drawEcouteuse(0, 0, 1, 0.25 + 0.65 * fade, true);
+    ctx.restore();
+    for (let k = 0; k < 4; k++) {
+      const ph = ((S.time * 0.25 + k / 4) % 1);
+      const r = (1 - ph) * Math.min(W, H) * 0.35 + 12;
+      ctx.beginPath(); ctx.arc(cx, H * 0.5, r, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(120,180,255," + (0.3 * ph * fade).toFixed(3) + ")";
+      ctx.lineWidth = 1.5; ctx.stroke();
+    }
+  } else if (visual === "voix") {
+    // La Première Voix : coeur de lumière dorée, anneaux qui convergent
+    const pu = 0.5 + 0.5 * Math.sin(S.time * 1.6);
+    const g2 = ctx.createRadialGradient(cx, cy, 4, cx, cy, Math.min(W, H) * 0.55);
+    g2.addColorStop(0, "rgba(255,209,102," + (0.35 + pu * 0.25).toFixed(3) + ")");
+    g2.addColorStop(0.4, "rgba(255,160,80," + (0.12 + pu * 0.08).toFixed(3) + ")");
+    g2.addColorStop(1, "rgba(0,0,0,0)");
+    ctx.fillStyle = g2; ctx.fillRect(0, 0, W, H);
+    for (let k = 0; k < 5; k++) {
+      const ph = ((S.time * 0.4 + k / 5) % 1);
+      const r = (1 - Math.pow(ph, 1.8)) * Math.min(W, H) * 0.5 + 20;
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(255,209,102," + (0.35 * ph).toFixed(3) + ")";
+      ctx.lineWidth = 1.5; ctx.stroke();
+    }
+    // L'Écouteuse marche vers la lumière
+    const ay = cy + Math.min(W, H) * (0.32 - Math.min(0.1, S.time * 0.008));
+    const walkBob = Math.sin(S.time * 4) * 2;
+    ctx.save();
+    ctx.translate(cx, ay + walkBob);
+    drawEcouteuse(0, 0, 1.1, 0.9, false);
+    ctx.restore();
+  } else {
+    // descente : tunnel de rings qui filent vers le haut
+    for (let k = 0; k < 7; k++) {
+      const ph = ((S.time * 0.5 + k / 7) % 1);
+      const r = Math.pow(ph, 2.2) * Math.min(W, H) * 0.9;
+      const a = 0.5 * (1 - ph);
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(139,123,255," + a.toFixed(3) + ")";
+      ctx.lineWidth = 2; ctx.stroke();
+    }
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(Math.sin(S.time) * 0.05 + Math.PI / 2);
+    drawEcouteuse(0, 0, 1, 0.9, false);
+    ctx.restore();
+  }
+}
+
+// ---------- Génération du labyrinthe ----------
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = (Math.random() * (i + 1)) | 0;
+    const tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+  }
+  return a;
+}
+const OPPOSITE = { n: "s", e: "w", s: "n", w: "e" };
+const DIRS = [["n", 0, -1], ["e", 1, 0], ["s", 0, 1], ["w", -1, 0]];
+
+// Salles : fusionne des blocs 2x2 (ou 3x2) en espaces ouverts
+function carveRooms(cells, cw, ch, count) {
+  for (let r = 0; r < count; r++) {
+    const rw = 2 + (Math.random() < 0.4 ? 1 : 0), rh = 2;
+    const rx = 1 + ((Math.random() * Math.max(1, cw - rw - 1)) | 0);
+    const ry = 1 + ((Math.random() * Math.max(1, ch - rh - 1)) | 0);
+    for (let y = ry; y < ry + rh && y < ch; y++) for (let x = rx; x < rx + rw && x < cw; x++) {
+      if (x < rx + rw - 1 && x + 1 < cw) { cells[y * cw + x].e = false; cells[y * cw + x + 1].w = false; }
+      if (y < ry + rh - 1 && y + 1 < ch) { cells[y * cw + x].s = false; cells[(y + 1) * cw + x].n = false; }
+    }
+  }
+}
+
+function genMaze(cw, ch, loopFactor) {
+  const cells = [];
+  for (let i = 0; i < cw * ch; i++) cells.push({ n: true, e: true, s: true, w: true, v: false });
+  const idx = function (x, y) { return y * cw + x; };
+  const stack = [[0, 0]];
+  cells[0].v = true;
+  while (stack.length) {
+    const cur = stack[stack.length - 1];
+    const x = cur[0], y = cur[1];
+    const opts = [];
+    for (let d = 0; d < 4; d++) {
+      const nx = x + DIRS[d][1], ny = y + DIRS[d][2];
+      if (nx >= 0 && ny >= 0 && nx < cw && ny < ch && !cells[idx(nx, ny)].v) opts.push(d);
+    }
+    if (!opts.length) { stack.pop(); continue; }
+    const d = opts[(Math.random() * opts.length) | 0];
+    const name = DIRS[d][0];
+    const nx = x + DIRS[d][1], ny = y + DIRS[d][2];
+    cells[idx(x, y)][name] = false;
+    cells[idx(nx, ny)][OPPOSITE[name]] = false;
+    cells[idx(nx, ny)].v = true;
+    stack.push([nx, ny]);
+  }
+  const inner = [];
+  for (let y = 0; y < ch; y++) for (let x = 0; x < cw; x++) {
+    if (y < ch - 1) inner.push([x, y, "s"]);
+    if (x < cw - 1) inner.push([x, y, "e"]);
+  }
+  shuffle(inner);
+  const toRemove = Math.floor(inner.length * loopFactor);
+  for (let k = 0; k < toRemove; k++) {
+    const x = inner[k][0], y = inner[k][1], name = inner[k][2];
+    cells[idx(x, y)][name] = false;
+    const nx = x + (name === "e" ? 1 : 0), ny = y + (name === "s" ? 1 : 0);
+    cells[idx(nx, ny)][OPPOSITE[name]] = false;
+  }
+  return cells;
+}
+
+function canGo(cx, cy, dir, cw, ch, cells) {
+  if (cx < 0 || cy < 0 || cx >= cw || cy >= ch) return false;
+  if (cells[cy * cw + cx][dir]) return false;
+  const nx = cx + (dir === "e" ? 1 : dir === "w" ? -1 : 0);
+  const ny = cy + (dir === "s" ? 1 : dir === "n" ? -1 : 0);
+  return nx >= 0 && ny >= 0 && nx < cw && ny < ch;
+}
+
+function bfsFrom(sx, sy, cw, ch, cells) {
+  const dist = new Int32Array(cw * ch).fill(-1);
+  const prev = new Int32Array(cw * ch).fill(-1);
+  const qx = [sx], qy = [sy];
+  dist[sy * cw + sx] = 0;
+  let head = 0;
+  while (head < qx.length) {
+    const x = qx[head], y = qy[head]; head++;
+    for (let d = 0; d < 4; d++) {
+      const name = DIRS[d][0];
+      if (!canGo(x, y, name, cw, ch, cells)) continue;
+      const nx = x + DIRS[d][1], ny = y + DIRS[d][2], id = ny * cw + nx;
+      if (dist[id] === -1) {
+        dist[id] = dist[y * cw + x] + 1;
+        prev[id] = y * cw + x;
+        qx.push(nx); qy.push(ny);
+      }
+    }
+  }
+  return { dist: dist, prev: prev };
+}
+
+function clampC(v, max) { return Math.max(0, Math.min(max - 1, v)); }
+
+// ---------- État du jeu ----------
+const S = {
+  mode: "menu",            // menu | play | pause | levelClear | over
+  level: 1,
+  score: 0,
+  totalOrbsCollected: 0,
+  cw: 0, ch: 0, cells: null,
+  cellSize: 40, ox: 0, oy: 0,
+  player: null,
+  trail: [],
+  orbs: [], orbsTotal: 0, orbsTaken: 0,
+  footprints: [],
+  pickups: [],
+  exit: null,
+  enemies: [],
+  pings: [],
+  parts: [],
+  motes: [],
+  energy: PINGS_MAX,
+  pulseCharge: 1,
+  light: null,
+  time: 0,
+  shake: 0,
+  message: null, messageT: 0,
+  introT: 0,
+  best: 0,
+  danger: 0,
+  whisperT: 6,
+  god: false,
+  timeAlive: 0, spotCount: 0, distM: 0,
+  lastDirTap: { key: null, t: 0 },
+  packShoutCd: 0,
+  inputGrace: 0
+};
+try { S.best = parseInt(localStorage.getItem("echo_best") || "0", 10) || 0; } catch (e) {}
+
+function fmtTime(sec) {
+  const m = Math.floor(sec / 60), s = Math.floor(sec % 60);
+  return m + " min " + (s < 10 ? "0" : "") + s;
+}
+
+function cellCenterX(cx) { return S.ox + (cx + 0.5) * S.cellSize; }
+function cellCenterY(cy) { return S.oy + (cy + 0.5) * S.cellSize; }
+function cellOf(x, y) {
+  return {
+    cx: Math.floor((x - S.ox) / S.cellSize),
+    cy: Math.floor((y - S.oy) / S.cellSize)
+  };
+}
+function fitMaze() {
+  const pad = Math.min(70, W * 0.06, H * 0.09);
+  const s = Math.min((W - pad * 2) / (S.cw * BASE_CELL), (H - pad * 2 - 50) / (S.ch * BASE_CELL));
+  const oldSize = S.cellSize, oldOx = S.ox, oldOy = S.oy;
+  S.cellSize = Math.max(16, BASE_CELL * s);
+  S.ox = (W - S.cw * S.cellSize) / 2;
+  S.oy = (H - S.ch * S.cellSize) / 2 + 12;
+  const remap = function (e) {
+    e.x = S.ox + ((e.x - oldOx) / oldSize) * S.cellSize;
+    e.y = S.oy + ((e.y - oldOy) / oldSize) * S.cellSize;
+  };
+  S.orbs.forEach(remap);
+  S.pickups.forEach(remap);
+  S.enemies.forEach(remap);
+  // Les positions mémorisées (traînées et destinations de patrouille) seraient fausses après remise à l'échelle
+  S.enemies.forEach(function (en) {
+    if (en.trail) en.trail.length = 0;
+    if (en.wtx !== undefined) {
+      en.wtx = S.ox + ((en.wtx - oldOx) / oldSize) * S.cellSize;
+      en.wty = S.oy + ((en.wty - oldOy) / oldSize) * S.cellSize;
+    }
+  });
+  S.trail.length = 0;
+  S.footprints.length = 0;
+  if (S.player) remap(S.player);
+  if (S.exit) remap(S.exit);
+  S.shake = 0;
+  S.pings.length = 0;
+}
+
+function buildLevel(n) {
+  const cw = Math.min(9 + n, 18);
+  const ch = Math.min(7 + Math.floor(n * 0.7), 12);
+  const cells = genMaze(cw, ch, Math.min(0.10 + n * 0.02, 0.30));
+  carveRooms(cells, cw, ch, Math.min(1 + Math.floor(n / 3), 3));
+  S.cw = cw; S.ch = ch; S.cells = cells;
+  S.light = new Float32Array(cw * ch);
+  S.pings = []; S.orbs = []; S.pickups = []; S.enemies = []; S.parts = [];
+  S.trail = []; S.footprints = [];
+  S.cellSize = BASE_CELL;
+  fitMaze();
+
+  // Poussière en suspension (ambiance)
+  S.motes = [];
+  for (let i = 0; i < 60; i++) {
+    S.motes.push({
+      x: Math.random() * W, y: Math.random() * H,
+      s: 0.6 + Math.random() * 1.6,
+      vx: (Math.random() - 0.5) * 6, vy: (Math.random() - 0.5) * 6,
+      tw: Math.random() * 6
+    });
+  }
+
+  S.player = {
+    x: cellCenterX(0), y: cellCenterY(0),
+    r: PLAYER_R, lives: 3, inv: 0, stepT: 0,
+    fx: 1, fy: 0, vx: 0, vy: 0
+  };
+
+  const bfs = bfsFrom(0, 0, cw, ch, cells);
+  let far = 0;
+  for (let i = 1; i < bfs.dist.length; i++) if (bfs.dist[i] > bfs.dist[far]) far = i;
+  const exC = far % cw, eyC = (far / cw) | 0;
+  S.exit = { cx: exC, cy: eyC, x: cellCenterX(exC), y: cellCenterY(eyC), open: false, pulse: 0 };
+
+  // Orbes dans les culs-de-sac, les plus lointains d'abord
+  const deadEnds = [];
+  for (let y = 0; y < ch; y++) for (let x = 0; x < cw; x++) {
+    let open = 0;
+    for (let d = 0; d < 4; d++) if (canGo(x, y, DIRS[d][0], cw, ch, cells)) open++;
+    if (open <= 1 && bfs.dist[y * cw + x] > 2) deadEnds.push({ x: x, y: y, d: bfs.dist[y * cw + x] });
+  }
+  deadEnds.sort(function (a, b) { return b.d - a.d; });
+  const targetOrbs = Math.min(2 + n, 6);
+  for (let k = 0; k < targetOrbs && k < deadEnds.length; k++) {
+    S.orbs.push({ x: cellCenterX(deadEnds[k].x), y: cellCenterY(deadEnds[k].y), taken: false, t: Math.random() * 6 });
+  }
+  let guard = 0;
+  while (S.orbs.length < Math.min(targetOrbs, cw * ch - 1) && guard < 500) {
+    guard++;
+    const x = (Math.random() * cw) | 0, y = (Math.random() * ch) | 0;
+    if (bfs.dist[y * cw + x] > 2) {
+      S.orbs.push({ x: cellCenterX(x), y: cellCenterY(y), taken: false, t: Math.random() * 6 });
+    }
+  }
+  S.orbsTotal = S.orbs.length;
+  S.orbsTaken = 0;
+
+  // Orbes spéciaux : cri (illumine tout), leurre (attire au loin), chip (fuit, +250)
+  if (n >= 2 && S.orbs.length >= 2) {
+    shuffle(S.orbs);
+    S.orbs[0].kind = "cri";
+    S.orbs[1].kind = "leurre";
+    if (S.orbs.length > 3 && Math.random() < 0.6) S.orbs[2].kind = "chip";
+  }
+
+  // Bonus : 1 écho par niveau, 1 cœur tous les 3 niveaux
+  const usedCells = {};
+  S.orbs.forEach(function (o) { const c = cellOf(o.x, o.y); usedCells[c.cy * cw + c.cx] = true; });
+  function freeCell() {
+    let g = 0;
+    while (g++ < 500) {
+      const x = (Math.random() * cw) | 0, y = (Math.random() * ch) | 0;
+      const id = y * cw + x;
+      if (bfs.dist[id] > 2 && !usedCells[id]) { usedCells[id] = true; return { x: x, y: y }; }
+    }
+    return null;
+  }
+  const cE = freeCell();
+  if (cE) S.pickups.push({ type: "echo", x: cellCenterX(cE.x), y: cellCenterY(cE.y), t: Math.random() * 6 });
+  if (n % 3 === 0) {
+    const cH = freeCell();
+    if (cH) S.pickups.push({ type: "heart", x: cellCenterX(cH.x), y: cellCenterY(cH.y), t: Math.random() * 6 });
+  }
+
+  // Spectres : Chasseurs (rouges, alertés au son) et Sentinelles (violettes, lentes mais tenaces)
+  const enCount = Math.min(1 + Math.floor(n / 2), 7);
+  const candidates = [];
+  for (let i = 0; i < bfs.dist.length; i++) {
+    if (bfs.dist[i] > Math.max(3, bfs.dist[far] * 0.5)) candidates.push(i);
+  }
+  shuffle(candidates);
+  for (let k = 0; k < enCount && k < candidates.length; k++) {
+    const id = candidates[k], ecx = id % cw, ecy = (id / cw) | 0;
+    const sentinel = k % 2 === 1;
+    S.enemies.push({
+      type: sentinel ? "sentinel" : "chaser",
+      name: spectreName(),
+      spotted: false,
+      x: cellCenterX(ecx), y: cellCenterY(ecy),
+      trail: [], trailAcc: 0,
+      wtx: cellCenterX(ecx), wty: cellCenterY(ecy),
+      cx: ecx, cy: ecy, tx: ecx, ty: ecy,
+      wx: ecx, wy: ecy,
+      speed: Math.min((sentinel ? 0.65 : 0.9) + n * (sentinel ? 0.09 : 0.12), sentinel ? 2.1 : 2.5),
+      alertRange: sentinel ? PING_MAX_R * 0.7 : PING_MAX_R * 1.2,
+      lock: 0,
+      alert: 0, heard: null, wob: Math.random() * 6, growlT: 0,
+      stun: 0, pathT: 0, path: []
+    });
+  }
+
+  // Identité de la strate
+  const st = strateOf(n);
+  document.documentElement.style.setProperty("--strate-col", st.ping);
+  document.documentElement.style.setProperty("--strate-col2", st.wall);
+  S.introT = 3.5;
+  S.whisperT = 8 + Math.random() * 8;
+  S.packShoutCd = 0;
+  S.shake = 0;
+  const bp = document.getElementById("btnPulse");
+  if (bp) bp.classList.add("on");
+}
+
+// ---------- Boutons d'interface ----------
+function dbg(txt) {
+  const chip = document.getElementById("dbgChip");
+  if (chip) { chip.style.display = "block"; chip.textContent = txt; }
+  try { console.log("ÉCHO DBG:", txt); } catch (e2) {}
+}
+let lastUiAction = 0;
+function uiLock() {
+  const now = Date.now ? Date.now() : 0;
+  if (now - lastUiAction < 600) { lastUiAction = now; return true; }
+  lastUiAction = now;
+  return false;
+}
+function toast(txt) {
+  S.message = txt; S.messageT = 3;
+}
+function hideAllScreens() {
+  const screens = document.querySelectorAll(".screen");
+  for (let i = 0; i < screens.length; i++) screens[i].classList.add("hidden");
+}
+let introPlayed = false;
+function uiStart() {
+  if (uiLock()) return;
+  audio();
+  if (!introPlayed) {
+    introPlayed = true;
+    startCine(CINE_INTRO, function () { startGame(1, false, true); });
+  } else {
+    hideAllScreens();
+    startGame(1, false, true);
+  }
+}
+function uiNext() {
+  if (uiLock()) return;
+  if (!CINE.active) {
+    startCine(descenteCine(S.level + 1), function () { startGame(S.level + 1, true); });
+  }
+}
+function uiRetry() {
+  // Réessaye la strate courante : la progression (score) est gardée, vies remises à 3
+  if (uiLock()) return;
+  hideAllScreens();
+  S.score = Math.max(0, S.score);   // conservé
+  startGame(S.level, false, false);
+}
+function uiRestart() {
+  // Repart du tout début : score et stats remis à zéro
+  if (uiLock()) return;
+  hideAllScreens();
+  S.score = 0;
+  startGame(1, false, true);
+}
+function uiResume() {
+  if (uiLock()) return;
+  togglePause();
+}
+window.uiStart = uiStart;
+window.uiNext = uiNext;
+window.uiRetry = uiRetry;
+window.uiResume = uiResume;
+
+function wireButtons() {
+  const actions = {
+    btnStart: uiStart,
+    btnNext: uiNext,
+    btnRetry: uiRetry,
+    btnBackOne: uiRestart,
+    btnAgain: uiRestart,
+    btnResume: uiResume
+  };
+  window.actionNext = uiNext;
+  window.actionStart = uiStart;
+  window.actionRetryStrate = uiRetry;
+  window.actionRestart = uiRestart;
+  for (const id in actions) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+    const fn = actions[id];
+    el.addEventListener("click", function (e) { e.preventDefault(); fn(); });
+    el.addEventListener("pointerup", function (e) { e.preventDefault(); fn(); });
+    el.addEventListener("touchend", function (e) { e.preventDefault(); fn(); }, { passive: false });
+  }
+  const sl = document.getElementById("screenLevel");
+  if (sl) sl.addEventListener("click", function (e) {
+    if (e.target && e.target.closest && e.target.closest(".btn")) return;
+    if (!sl.classList.contains("hidden")) uiNext();
+  });
+  const so = document.getElementById("screenOver");
+  if (so) so.addEventListener("click", function (e) {
+    if (e.target && e.target.closest && e.target.closest(".btn")) return;
+    if (!so.classList.contains("hidden")) uiRetry();
+  });
+  const ss = document.getElementById("screenStart");
+  if (ss) ss.addEventListener("click", function (e) {
+    if (e.target && e.target.closest && e.target.closest(".btn")) return;
+    if (!ss.classList.contains("hidden")) uiStart();
+  });
+}
+wireButtons();
+
+// Empreintes de lumière
+// ---------- Entrées clavier ----------
+const keys = {};
+window.addEventListener("keydown", function (e) {
+  keys[e.code] = true;
+  if (e.repeat) return;
+  if (S.mode === "cine") {
+    if (e.code === "Escape") { e.preventDefault(); endCine(); }
+    else if (e.code === "Space" || e.code === "Enter" || e.code === "NumpadEnter" || e.code === "KeyE") {
+      e.preventDefault(); cineNext();
+    }
+    return;
+  }
+  // --- Codes de triche (test, clavier uniquement) ---
+  if (e.code === "KeyN") {   // strate suivante
+    audio();
+    if (S.mode === "play") {
+      startGame(S.level + 1, true);
+    } else {
+      // depuis le menu / écrans : démarre directement à la strate 2 (ou la suivante)
+      const target = (S.mode === "over" || S.mode === "levelClear") ? Math.min(GAME_END_LEVEL, S.level + 1) : 2;
+      hideAllScreens();
+      if (!introPlayed) introPlayed = true;
+      startGame(target, true);
+    }
+    e.preventDefault();
+    return;
+  }
+  if (e.code === "KeyJ") {   // +5 strates (saut de cycle)
+    audio();
+    const tgt = Math.min(GAME_END_LEVEL, (S.mode === "play" ? S.level + 5 : 5));
+    hideAllScreens();
+    startGame(tgt, S.mode === "play");
+    e.preventDefault();
+    return;
+  }
+  if (e.code === "KeyB") {   // aller directement à la dernière strate (fin du jeu)
+    audio();
+    hideAllScreens();
+    startGame(GAME_END_LEVEL, false, false);
+    e.preventDefault();
+    return;
+  }
+  if (e.code === "KeyL") {   // +1 vie
+    if (S.player) { S.player.lives = Math.min(3, S.player.lives + 1); updateHUD(); }
+    return;
+  }
+  if (e.code === "KeyI") {   // invincibilité on/off
+    S.god = !S.god;
+    toast(S.god ? "TRICHE : invincibilité ON" : "TRICHE : invincibilité OFF");
+    return;
+  }
+  if (e.code === "Space") { e.preventDefault(); ping(); }
+  if (e.code === "KeyE") { pulse(); }
+  if (e.code === "KeyP" || e.code === "Escape") { togglePause(); }
+  if (e.code === "KeyM") { toggleMute(); }
+  if (e.code === "Enter" || e.code === "NumpadEnter" || (e.code === "Space" && S.mode !== "play")) {
+    e.preventDefault();
+    if (S.mode === "menu") uiStart();
+    else if (S.mode === "levelClear") uiNext();
+    else if (S.mode === "over") uiRetry();
+    else if (S.mode === "pause") uiResume();
+  }
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) !== -1) e.preventDefault();
+});
+window.addEventListener("keyup", function (e) { keys[e.code] = false; });
+
+// Pause automatique quand l'onglet perd le focus
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden && S.mode === "play") togglePause();
+});
+window.addEventListener("blur", function () {
+  if (S.mode === "play") togglePause();
+});
+
+// ---------- Entrées pointer ----------
+const joy = { active: false, sx: 0, sy: 0, dx: 0, dy: 0 };
+const touches = {};
+
+canvas.addEventListener("pointerdown", function (e) {
+  audio();
+  if (S.mode === "cine") { cineNext(); return; }
+  if (S.mode !== "play" || S.inputGrace > 0) return;
+  // Zone gauche de l'écran = déplacement, le reste = onde sonore
+  if (e.clientX < window.innerWidth * 0.45 && !joy.active) {
+    joy.active = true; joy.sx = e.clientX; joy.sy = e.clientY; joy.dx = 0; joy.dy = 0;
+    touches[e.pointerId] = "move";
+  } else {
+    touches[e.pointerId] = "ping";
+    ping();
+  }
+});
+canvas.addEventListener("pointermove", function (e) {
+  if (touches[e.pointerId] === "move") {
+    joy.dx = e.clientX - joy.sx; joy.dy = e.clientY - joy.sy;
+  }
+});
+function endTouch(e) {
+  if (touches[e.pointerId] === "move") { joy.active = false; joy.dx = 0; joy.dy = 0; }
+  delete touches[e.pointerId];
+}
+canvas.addEventListener("pointerup", endTouch);
+canvas.addEventListener("pointercancel", endTouch);
+
+function touchInput() {
+  let ix = 0, iy = 0;
+  if (joy.active) { ix = joy.dx / 40; iy = joy.dy / 40; }
+  const m = Math.hypot(ix, iy);
+  if (m > 1) { ix /= m; iy /= m; }
+  return { ix: ix, iy: iy };
+}
+
+// ---------- Particules ----------
+function burst(x, y, color, n, spd) {
+  for (let i = 0; i < n; i++) {
+    const a = Math.random() * Math.PI * 2;
+    const v = (0.3 + Math.random()) * (spd || 90);
+    S.parts.push({ x: x, y: y, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: 0.5 + Math.random() * 0.4, col: color });
+  }
+}
+
+// ---------- Onde sonore ----------
+function ping() {
+  if (S.mode !== "play" || !S.player || S.player.lives <= 0) return;
+  if (S.inputGrace > 0) return;   // pas d'onde accidentelle après une cinématique
+  if (S.energy < 1) { sfx.empty(); return; }
+  S.energy -= 1;
+  S.pings.push({ x: S.player.x, y: S.player.y, r: 0, alive: true });
+  sfx.ping();
+  alertEnemies(S.player.x, S.player.y);
+  updateHUD();
+}
+function alertEnemies(x, y) {
+  const c = cellOf(x, y);
+  for (let i = 0; i < S.enemies.length; i++) {
+    const en = S.enemies[i];
+    if (Math.hypot(en.x - x, en.y - y) < en.alertRange) {
+      en.heard = { x: c.cx, cy: c.cy };
+      en.alert = 3.5;
+      // La Sentinelle verrouille : elle te traque 3 s même en silence
+      if (en.type === "sentinel") {
+        if (en.lock <= 0) toast(en.name + " t'a VERROUILLÉE.");
+        en.lock = 3;
+      }
+    }
+  }
+}
+
+// ---------- Pouls répulsif ----------
+function pulse() {
+  if (S.mode !== "play" || !S.player || S.player.lives <= 0) return;
+  if (S.pulseCharge < 1) { sfx.empty(); return; }
+  S.pulseCharge = 0;
+  sfx.pulse();
+  S.shake = 0.35;
+  const p = S.player;
+  burst(p.x, p.y, "255,209,102", 26, 160);
+  S.pings.push({ x: p.x, y: p.y, r: 0, alive: true, pulse: true });
+  for (let i = 0; i < S.enemies.length; i++) {
+    const en = S.enemies[i];
+    const d = Math.hypot(en.x - p.x, en.y - p.y);
+    if (d < PULSE_RADIUS) {
+      en.stun = PULSE_STUN * (1 - d / PULSE_RADIUS * 0.5);
+      en.alert = 0; en.heard = null; en.path = [];
+    }
+  }
+  updateHUD();
+}
+
+// ---------- Dégâts / mort ----------
+function hurtPlayer() {
+  const p = S.player;
+  if (S.god) return;                       // code de triche : invincibilité (touche I)
+  if (p.inv > 0 || p.lives <= 0) return;
+  p.lives -= 1;
+  S.shake = 0.5;
+  sfx.hurt();
+  burst(p.x, p.y, "255,93,122", 22, 130);
+  try { if (navigator.vibrate) navigator.vibrate(120); } catch (e) {}
+  updateHUD();
+  if (p.lives <= 0) {
+    // Slow-mo dramatique avant l'écran de mort
+    S.mode = "dying";
+    S.dyingT = 1.1;
+    S.shake = 1;
+    sfx.over();
+    stopAmbient();
+    if (S.score > S.best) {
+      S.best = S.score;
+      try { localStorage.setItem("echo_best", String(S.best)); } catch (e) {}
+    }
+    try { if (navigator.vibrate) navigator.vibrate([80, 60, 160]); } catch (e) {}
+  } else {
+    p.inv = 2.2;
+    p.x = cellCenterX(0); p.y = cellCenterY(0);
+    p.vx = 0; p.vy = 0;
+    S.message = "Un Spectre t'a touchée !";
+    S.messageT = 2;
+    for (let i = 0; i < S.enemies.length; i++) { S.enemies[i].alert = 0; S.enemies[i].heard = null; S.enemies[i].path = []; }
+  }
+}
+
+// ---------- Mort au ralenti / écran de défaite ----------
+function updateDying(dt) {
+  // Le temps s'étire : on décélère dt et on laisse vivre particules et secousse
+  const slow = dt * 0.35;
+  S.dyingT -= slow;
+  S.shake = Math.max(0, S.shake - slow * 1.5);
+  const p = S.player;
+  p.vx *= 0.9; p.vy *= 0.9; p.x += p.vx * slow; p.y += p.vy * slow;
+  for (let i = S.parts.length - 1; i >= 0; i--) {
+    const pt = S.parts[i];
+    pt.life -= slow;
+    pt.x += pt.vx * slow * 0.4; pt.y += pt.vy * slow * 0.4;
+    pt.vx *= 0.98; pt.vy *= 0.98;
+    if (pt.life <= 0) S.parts.splice(i, 1);
+  }
+  for (let i = 0; i < S.motes.length; i++) {
+    const m = S.motes[i];
+    m.x += m.vx * slow * 0.3; m.y += m.vy * slow * 0.3;
+  }
+  if (S.dyingT <= 0) showGameOver();
+}
+function showGameOver() {
+  startCine(CINE_MORT(), function () {
+    S.mode = "over";
+    const fs2 = document.getElementById("finalStats");
+    if (fs2) fs2.innerHTML =
+      "Strate atteinte : <b>" + strateOf(S.level).name + "</b><br>" +
+      "Score final : <b>" + S.score + "</b>  •  Orbes : <b>" + S.totalOrbsCollected + "</b><br>" +
+      "Temps de survie : <b>" + fmtTime(S.timeAlive) + "</b><br>" +
+      "Spectres démasqués : <b>" + S.spotCount + "</b>  •  Distance : <b>" + Math.round(S.distM) + " m</b><br>" +
+      "Meilleur score : <b>" + S.best + "</b>";
+    const dq = document.getElementById("deathQuote");
+    if (dq) dq.textContent = DEATH_QUOTES[(Math.random() * DEATH_QUOTES.length) | 0];
+    hideAllScreens();
+    const so = document.getElementById("screenOver");
+    if (so) so.classList.remove("hidden");
+  });
+}
+
+// ---------- Pause / mute ----------
+function togglePause() {
+  if (S.mode === "play") {
+    S.mode = "pause";
+    hideAllScreens();
+    const sp = document.getElementById("screenPause");
+    if (sp) sp.classList.remove("hidden");
+  } else if (S.mode === "pause") {
+    S.mode = "play";
+    const sp = document.getElementById("screenPause");
+    if (sp) sp.classList.add("hidden");
+  }
+}
+function toggleMute() {
+  muted = !muted;
+  const bm = document.getElementById("btnMute");
+  if (bm) bm.textContent = muted ? "🔇" : "🔊";
+  if (ambient.nodes && AC) {
+    try { ambient.nodes.g.gain.linearRampToValueAtTime(muted ? 0 : 0.05, AC.currentTime + 0.3); } catch (e) {}
+  }
+}
+const bmPause = document.getElementById("btnPause");
+if (bmPause) bmPause.addEventListener("click", togglePause);
+const bmMute = document.getElementById("btnMute");
+if (bmMute) bmMute.addEventListener("click", toggleMute);
+const bpulse = document.getElementById("btnPulse");
+if (bpulse) {
+  // Blindage mobile : un seul point d'entrée, tous les autres événements neutralisés
+  bpulse.addEventListener("pointerdown", function (e) { e.preventDefault(); e.stopPropagation(); audio(); pulse(); });
+  ["touchstart", "touchend", "pointerup", "click", "contextmenu"].forEach(function (ev) {
+    bpulse.addEventListener(ev, function (e) { e.preventDefault(); e.stopPropagation(); }, { passive: false });
+  });
+}
+const bskip = document.getElementById("btnSkip");
+if (bskip) bskip.addEventListener("click", function (e) { e.preventDefault(); endCine(); });
+
+// ---------- Boucle principale ----------
+let lastT = 0;
+let beatT = 0;
+function frame(t) {
+  try {
+    const dt = Math.min((t - lastT) / 1000 || 0.016, 0.05);
+    lastT = t;
+    S.time += dt;
+    if (S.mode === "play") update(dt);
+    else if (S.mode === "dying") updateDying(dt);
+    if (S.mode === "cine") updateCine(dt);
+    if (S.mode === "cine") renderCine(); else render();
+    updateAmbient();
+  } catch (err) {
+    console.error("ÉCHO error:", err);
+    ctx.fillStyle = "rgba(120,0,0,.6)";
+    ctx.fillRect(0, 0, W, 30);
+    ctx.fillStyle = "#ffd7de";
+    ctx.font = "13px monospace";
+    ctx.textAlign = "left";
+    ctx.fillText("Erreur : " + (err && err.message ? err.message : err), 10, 20);
+  }
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+function update(dt) {
+  const p = S.player;
+  if (!p || p.lives <= 0) return;   // garde-fou : jamais de crash si le niveau est mal construit
+  p.inv = Math.max(0, p.inv - dt);
+  S.shake = Math.max(0, S.shake - dt * 2);
+  S.energy = Math.min(PINGS_MAX, S.energy + dt / PING_REGEN);
+  S.pulseCharge = Math.min(1, S.pulseCharge + dt / PULSE_REGEN);
+  S.introT = Math.max(0, S.introT - dt);
+  S.timeAlive += dt;
+  S.inputGrace = Math.max(0, S.inputGrace - dt);
+  S.packShoutCd = Math.max(0, (S.packShoutCd || 0) - dt);
+  S.whisperT -= dt;
+  if (S.whisperT <= 0) {
+    S.whisperT = 12 + Math.random() * 14;
+    if (Math.random() < 0.6) sfx.whisper();
+  }
+  const silent = keys["ShiftLeft"] || keys["ShiftRight"];
+
+  // --- Déplacement avec inertie douce ---
+  let ix = 0, iy = 0;
+  if (keys["KeyW"] || keys["KeyZ"] || keys["ArrowUp"]) iy -= 1;
+  if (keys["KeyS"] || keys["ArrowDown"]) iy += 1;
+  if (keys["KeyA"] || keys["KeyQ"] || keys["ArrowLeft"]) ix -= 1;
+  if (keys["KeyD"] || keys["ArrowRight"]) ix += 1;
+  const ti = touchInput();
+  ix += ti.ix; iy += ti.iy;
+  const mag = Math.hypot(ix, iy);
+  if (mag > 1) { ix /= mag; iy /= mag; }
+  const speed = 4.4 * S.cellSize * (silent ? 0.55 : 1);
+  const k = Math.min(1, dt * 9);
+  p.vx += (ix * speed - p.vx) * k;
+  p.vy += (iy * speed - p.vy) * k;
+  p.x += p.vx * dt;
+  p.y += p.vy * dt;
+  const moveMag = Math.hypot(p.vx, p.vy);
+  if (moveMag > 8) { p.fx = p.vx / moveMag; p.fy = p.vy / moveMag; }
+  S.distM += moveMag * dt / 64;
+
+  collideWalls(p);
+
+  // --- Traînée du joueur (fantôme de l'Écouteuse) ---
+  S.trail.push({ x: p.x, y: p.y, life: 0.6 });
+  for (let i = S.trail.length - 1; i >= 0; i--) {
+    S.trail[i].life -= dt;
+    if (S.trail[i].life <= 0) S.trail.splice(i, 1);
+  }
+  for (let fp = S.footprints.length - 1; fp >= 0; fp--) {
+    S.footprints[fp].life -= dt;
+    if (S.footprints[fp].life <= 0) S.footprints.splice(fp, 1);
+  }
+
+  // --- Bruits de pas ---
+  p.stepT += dt * (moveMag / (S.cellSize * 4.4)) * (silent ? 0.12 : 1);
+  if (p.stepT > 1) {
+    p.stepT = 0;
+    S.footprints.push({ x: p.x, y: p.y, life: silent ? 0.6 : 1.6, a: Math.atan2(p.fy, p.fx), silent: !!silent });
+    if (S.footprints.length > 40) S.footprints.shift();
+    if (!silent) {
+      sfx.step();
+      const pc = cellOf(p.x, p.y);
+      for (let i = 0; i < S.enemies.length; i++) {
+        const en = S.enemies[i];
+        if (Math.hypot(en.x - p.x, en.y - p.y) < S.cellSize * 2.2 && Math.random() < 0.4) {
+          en.heard = { x: pc.cx, cy: pc.cy };
+          en.alert = Math.max(en.alert, 2);
+        }
+      }
+    }
+  }
+
+  // --- Ondes ---
+  for (let i = 0; i < S.pings.length; i++) {
+    const pg = S.pings[i];
+    pg.r += PING_SPEED * dt;
+    lightRing(pg.x, pg.y, pg.r);
+    if (pg.r > PING_MAX_R) pg.alive = false;
+  }
+  S.pings = S.pings.filter(function (g) { return g.alive; });
+
+  // --- Lueur ambiante + décroissance ---
+  const pc2 = cellOf(p.x, p.y);
+  for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+    const cx = pc2.cx + dx, cy = pc2.cy + dy;
+    if (cx < 0 || cy < 0 || cx >= S.cw || cy >= S.ch) continue;
+    const d = Math.hypot(cellCenterX(cx) - p.x, cellCenterY(cy) - p.y);
+    const lit = 0.55 * Math.max(0, 1 - d / (S.cellSize * 1.6));
+    const id = cy * S.cw + cx;
+    if (lit > S.light[id]) S.light[id] = lit;
+  }
+  for (let i = 0; i < S.light.length; i++) {
+    if (S.light[i] > 0) S.light[i] = Math.max(0, S.light[i] - dt / LIGHT_FADE);
+  }
+
+  // --- Poussière en suspension ---
+  for (let i = 0; i < S.motes.length; i++) {
+    const m = S.motes[i];
+    m.x += m.vx * dt; m.y += m.vy * dt;
+    if (m.x < -5) m.x = W + 5; if (m.x > W + 5) m.x = -5;
+    if (m.y < -5) m.y = H + 5; if (m.y > H + 5) m.y = -5;
+    m.tw += dt * 2;
+  }
+
+  // --- Particules ---
+  for (let i = S.parts.length - 1; i >= 0; i--) {
+    const pt = S.parts[i];
+    pt.life -= dt;
+    pt.x += pt.vx * dt; pt.y += pt.vy * dt;
+    pt.vx *= 0.96; pt.vy *= 0.96;
+    if (pt.life <= 0) S.parts.splice(i, 1);
+  }
+
+  // --- Orbes ---
+  for (let i = 0; i < S.orbs.length; i++) {
+    const o = S.orbs[i];
+    o.t += dt;
+    // Le chip fuit l'Écouteuse d'une cellule à l'autre
+    if (o.kind === "chip" && !o.taken) {
+      const dO = Math.hypot(o.x - p.x, o.y - p.y);
+      if (dO < S.cellSize * 2.4 && !o.moving && !o.fleeCell) {
+        const c = cellOf(o.x, o.y);
+        const opts = [];
+        for (let d = 0; d < 4; d++) {
+          const nm = DIRS[d][0];
+          if (!canGo(c.cx, c.cy, nm, S.cw, S.ch, S.cells)) continue;
+          const nx = c.cx + DIRS[d][1], ny = c.cy + DIRS[d][2];
+          const nd = Math.hypot(cellCenterX(nx) - p.x, cellCenterY(ny) - p.y);
+          opts.push({ x: nx, y: ny, d: nd });
+        }
+        if (opts.length) {
+          opts.sort(function (a, b) { return b.d - a.d; });
+          o.fleeCell = opts[0];
+        }
+      }
+      if (o.fleeCell) {
+        const tx = cellCenterX(o.fleeCell.x), ty = cellCenterY(o.fleeCell.y);
+        const sp = S.cellSize * 3.2;
+        const dd = Math.hypot(tx - o.x, ty - o.y);
+        if (dd < 4) { o.x = tx; o.y = ty; o.fleeCell = null; o.moving = false; }
+        else {
+          o.moving = true;
+          o.x += (tx - o.x) / dd * sp * dt;
+          o.y += (ty - o.y) / dd * sp * dt;
+        }
+      }
+    }
+    if (!o.taken && Math.hypot(o.x - p.x, o.y - p.y) < p.r + ORB_R) {
+      o.taken = true;
+      S.orbsTaken++;
+      const kind = o.kind || "norm";
+      if (kind === "chip") {
+        S.score += 250;
+        S.message = "Un souvenir timide ! +250";
+        S.messageT = 1.6;
+        sfx.heart();
+      } else {
+        S.score += 100;
+        sfx.orb();
+        if (kind === "cri") {
+          // L'orbe hurle : toute la strate se révèle un instant
+          for (let li = 0; li < S.light.length; li++) S.light[li] = 0.85;
+          S.pings.push({ x: o.x, y: o.y, r: 0, alive: true, gold: true });
+          S.message = "L'orbe hurle : la strate s'illumine !";
+          S.messageT = 2.2;
+          S.shake = 0.4;
+        } else if (kind === "leurre") {
+          // Un chant fake, loin du joueur
+          let lx = 0, ly = 0, bestD = -1;
+          for (let t2 = 0; t2 < 40; t2++) {
+            const x = (Math.random() * S.cw) | 0, y = (Math.random() * S.ch) | 0;
+            const dd = Math.hypot(cellCenterX(x) - p.x, cellCenterY(y) - p.y);
+            if (dd > bestD) { bestD = dd; lx = x; ly = y; }
+          }
+          for (let e = 0; e < S.enemies.length; e++) {
+            S.enemies[e].heard = { x: lx, cy: ly };
+            S.enemies[e].alert = 4.5;
+          }
+          S.message = "Le leurre chante au loin…";
+          S.messageT = 2.2;
+        } else {
+          const quips = ["Un souvenir de plus.", "Elle chante doucement.", "La Faille s'en souviendra.", "Ton écho grandit."];
+          if (Math.random() < 0.4) { S.message = quips[(Math.random() * quips.length) | 0]; S.messageT = 1.6; }
+        }
+      }
+      burst(o.x, o.y, kind === "chip" ? "93,255,176" : "70,230,255", 16, 110);
+      updateHUD();
+      if (S.orbsTaken >= S.orbsTotal && !S.exit.open) {
+        S.exit.open = true;
+        S.message = "Le portail s'ouvre… Descends.";
+        S.messageT = 2.5;
+        sfx.unlock();
+      }
+    }
+  }
+
+  // --- Bonus ---
+  for (let i = S.pickups.length - 1; i >= 0; i--) {
+    const kk = S.pickups[i];
+    kk.t += dt;
+    if (Math.hypot(kk.x - p.x, kk.y - p.y) < p.r + 10) {
+      if (kk.type === "echo") {
+        S.energy = Math.min(PINGS_MAX, S.energy + 1);
+        S.score += 25;
+        S.message = "+1 charge de sonar";
+        sfx.orb();
+      } else if (kk.type === "heart") {
+        p.lives = Math.min(3, p.lives + 1);
+        S.message = "Un cœur battant rejoint le tien.";
+        sfx.heart();
+      }
+      S.messageT = 1.6;
+      burst(kk.x, kk.y, kk.type === "heart" ? "255,93,122" : "93,255,176", 18, 100);
+      S.pickups.splice(i, 1);
+      updateHUD();
+    }
+  }
+
+  // --- Sortie ---
+  S.exit.pulse += dt;
+  if (S.exit.open && Math.hypot(S.exit.x - p.x, S.exit.y - p.y) < p.r + 16) {
+    levelClear();
+    return;
+  }
+
+  // --- Spectres : IA sonore + poursuite (BFS vers le joueur) ---
+  let dangerNow = 0;
+  let dPlayerLast = 999;
+  for (let i = 0; i < S.enemies.length; i++) {
+    const en = S.enemies[i];
+    en.wob += dt * 3;
+    en.alert = Math.max(0, en.alert - dt);
+    en.lock = Math.max(0, (en.lock || 0) - dt);
+    en.stun = Math.max(0, en.stun - dt);
+    en.growlT -= dt;
+    if (en.stun > 0) { en.lock = 0; continue; }
+
+    if (en.alert > 0 || en.lock > 0) {
+      en.pathT -= dt;
+      if (en.pathT <= 0 && en.path.length === 0) {
+        en.pathT = en.lock > 0 ? 0.35 : 0.5;
+        const pcell = cellOf(p.x, p.y);
+        const ec = cellOf(en.x, en.y);
+        const b2 = bfsFrom(clampC(pcell.cx, S.cw), clampC(pcell.cy, S.ch), S.cw, S.ch, S.cells);
+        const cur = clampC(ec.cy, S.ch) * S.cw + clampC(ec.cx, S.cw);
+        if (b2.dist[cur] > 0) {
+          en.path = [];
+          let id = cur;
+          let guard2 = 0;
+          while (id >= 0 && b2.dist[id] > 0 && guard2++ < 500) {
+            en.path.push({ x: id % S.cw, y: (id / S.cw) | 0 });
+            id = b2.prev[id];
+          }
+        }
+      }
+    }
+
+    let gx, gy;
+    if (en.path.length) {
+      gx = cellCenterX(en.path[0].x); gy = cellCenterY(en.path[0].y);
+      if (Math.hypot(gx - en.x, gy - en.y) < 4) {
+        en.path.shift();
+        if (en.path.length) {
+          gx = cellCenterX(en.path[0].x); gy = cellCenterY(en.path[0].y);
+        } else {
+          en.wtx = undefined;   // re-choisira une destination de patrouille
+          gx = en.x; gy = en.y;
+        }
+      }
+    } else {
+      // Patrouille : on garde la même destination jusqu'à y être arrivé
+      if (en.wtx === undefined || Math.hypot(en.wtx - en.x, en.wty - en.y) < 4) {
+        const r = chooseEnemyTarget(en);
+        en.wtx = r.x; en.wty = r.y;
+      }
+      gx = en.wtx; gy = en.wty;
+    }
+
+    const dg = Math.hypot(gx - en.x, gy - en.y);
+    const hunting = en.alert > 0 || en.lock > 0;
+    // Le Chasseur jaillit au contact : accélération finale de poursuite
+    const lunge = (!en.stun && en.type === "chaser" && hunting && dPlayerLast < S.cellSize * 1.6) ? 1.6 : 1;
+    const sp = en.speed * (hunting ? (en.type === "sentinel" ? 2.6 : 1.9) : 1) * lunge * S.cellSize * 0.55;
+    if (dg < 2 || dg < sp * dt) {
+      en.x = gx; en.y = gy;
+      const c2 = cellOf(en.x, en.y);
+      en.cx = clampC(c2.cx, S.cw); en.cy = clampC(c2.cy, S.ch);
+    } else {
+      en.x += (gx - en.x) / dg * sp * dt;
+      en.y += (gy - en.y) / dg * sp * dt;
+    }
+    if (hunting && en.growlT <= 0) {
+      en.growlT = 0.8 + Math.random() * 0.6;
+      sfx.monster(en.type, (en.x - p.x) / (S.cellSize * 4));
+    }
+    // Traînée spectrale quand il chasse
+    if (hunting && !en.stun) {
+      en.trailAcc = (en.trailAcc || 0) + dt;
+      if (en.trailAcc > 0.05) {
+        en.trailAcc = 0;
+        en.trail.push({ x: en.x, y: en.y, life: 0.5 });
+        if (en.trail.length > 14) en.trail.shift();
+      }
+    }
+    for (let ti2 = en.trail.length - 1; ti2 >= 0; ti2--) {
+      en.trail[ti2].life -= dt;
+      if (en.trail[ti2].life <= 0) en.trail.splice(ti2, 1);
+    }
+    const dPlayer = Math.hypot(en.x - p.x, en.y - p.y);
+    dPlayerLast = dPlayer;
+    if (!en.spotted && (en.alert > 0 || en.lock > 0) && dPlayer < S.cellSize * 4.5) {
+      en.spotted = true;
+      S.spotCount++;
+      // Appel de meute : le Chasseur qui te repère hurle, les autres convergent
+      if (en.type === "chaser" && S.packShoutCd <= 0) {
+        S.packShoutCd = 8;
+        sfx.shout();
+        toast(en.name + " appelle la meute…");
+        const pc3 = cellOf(p.x, p.y);
+        for (let e2 = 0; e2 < S.enemies.length; e2++) {
+          const other = S.enemies[e2];
+          if (other === en) continue;
+          if (!other.stun && Math.hypot(other.x - en.x, other.y - en.y) < S.cellSize * 8) {
+            other.heard = { x: pc3.cx, cy: pc3.cy };
+            other.alert = Math.max(other.alert, 2.5);
+          }
+        }
+      } else {
+        toast(en.name + (en.type === "sentinel" ? " t'a verrouillée." : " t'a entendue."));
+      }
+      sfx.whisper();
+    }
+    if (dPlayer < p.r + 10) hurtPlayer();
+    if (S.mode !== "play") return;
+    dangerNow = Math.max(dangerNow, Math.max(0, 1 - dPlayer / (S.cellSize * 3.2)));
+  }
+
+  if (dangerNow > 0.25) {
+    beatT -= dt;
+    if (beatT <= 0) { beatT = 1.4 - dangerNow * 0.8; sfx.beat(); }
+    if (Math.random() < 0.02) toast(SWARM_WHISPERS[(Math.random() * SWARM_WHISPERS.length) | 0]);
+  }
+  S.danger = dangerNow;
+
+  S.messageT = Math.max(0, S.messageT - dt);
+}
+
+function chooseEnemyTarget(en) {
+  if (en.alert > 0 && en.heard) {
+    const bfs = bfsFrom(en.heard.x, en.heard.cy, S.cw, S.ch, S.cells);
+    const cur = en.cy * S.cw + en.cx;
+    if (bfs.dist[cur] > 0) {
+      const pid = bfs.prev[cur];
+      return { x: cellCenterX(pid % S.cw), y: cellCenterY((pid / S.cw) | 0) };
+    }
+  }
+  const opts = [];
+  for (let d = 0; d < 4; d++) {
+    const name = DIRS[d][0];
+    if (!canGo(en.cx, en.cy, name, S.cw, S.ch, S.cells)) continue;
+    const nx = en.cx + DIRS[d][1], ny = en.cy + DIRS[d][2];
+    if (nx === en.wx && ny === en.wy) continue;
+    opts.push([nx, ny]);
+  }
+  if (opts.length) {
+    const pick = opts[(Math.random() * opts.length) | 0];
+    en.wx = en.cx; en.wy = en.cy;
+    en.tx = pick[0]; en.ty = pick[1];
+  }
+  return { x: cellCenterX(en.tx), y: cellCenterY(en.ty) };
+}
+
+function lightRing(px, py, r) {
+  const step = Math.max(10, S.cellSize * 0.5);
+  const n = Math.max(16, Math.ceil((Math.PI * 2 * r) / step));
+  for (let i = 0; i < n; i++) {
+    const a = (i / n) * Math.PI * 2;
+    const wx = px + Math.cos(a) * r, wy = py + Math.sin(a) * r;
+    if (!visibleLine(px, py, wx, wy)) continue;
+    const c = cellOf(wx, wy);
+    if (c.cx < 0 || c.cy < 0 || c.cx >= S.cw || c.cy >= S.ch) continue;
+    const id = c.cy * S.cw + c.cx;
+    if (S.light[id] < 1) S.light[id] = 1;
+  }
+}
+
+function visibleLine(x1, y1, x2, y2) {
+  const d = Math.hypot(x2 - x1, y2 - y1);
+  const steps = Math.max(2, Math.ceil(d / (S.cellSize * 0.25)));
+  let last = cellOf(x1, y1);
+  for (let s = 1; s <= steps; s++) {
+    const x = x1 + (x2 - x1) * s / steps, y = y1 + (y2 - y1) * s / steps;
+    const c = cellOf(x, y);
+    if (c.cx !== last.cx || c.cy !== last.cy) {
+      if (c.cx > last.cx) { if (!canGo(last.cx, last.cy, "e", S.cw, S.ch, S.cells)) return false; }
+      else if (c.cx < last.cx) { if (!canGo(last.cx, last.cy, "w", S.cw, S.ch, S.cells)) return false; }
+      else if (c.cy > last.cy) { if (!canGo(last.cx, last.cy, "s", S.cw, S.ch, S.cells)) return false; }
+      else if (c.cy < last.cy) { if (!canGo(last.cx, last.cy, "n", S.cw, S.ch, S.cells)) return false; }
+      else return false;
+      last = c;
+    }
+  }
+  return true;
+}
+
+function collideWalls(p) {
+  const c = cellOf(p.x, p.y);
+  for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
+    const cx = c.cx + dx, cy = c.cy + dy;
+    if (cx < 0 || cy < 0 || cx >= S.cw || cy >= S.ch) continue;
+    const x0 = S.ox + cx * S.cellSize, y0 = S.oy + cy * S.cellSize;
+    const x1 = x0 + S.cellSize, y1 = y0 + S.cellSize;
+    const w = S.cells[cy * S.cw + cx];
+    if (w.n) segPush(p, x0, y0, x1, y0);
+    if (w.s) segPush(p, x0, y1, x1, y1);
+    if (w.w) segPush(p, x0, y0, x0, y1);
+    if (w.e) segPush(p, x1, y0, x1, y1);
+  }
+  p.x = Math.max(S.ox + p.r, Math.min(S.ox + S.cw * S.cellSize - p.r, p.x));
+  p.y = Math.max(S.oy + p.r, Math.min(S.oy + S.ch * S.cellSize - p.r, p.y));
+}
+function segPush(p, ax, ay, bx, by) {
+  const vx = bx - ax, vy = by - ay;
+  const len2 = vx * vx + vy * vy;
+  if (len2 === 0) return;
+  let t = ((p.x - ax) * vx + (p.y - ay) * vy) / len2;
+  t = Math.max(0, Math.min(1, t));
+  const nx = p.x - (ax + vx * t), ny = p.y - (ay + vy * t);
+  const d = Math.hypot(nx, ny);
+  if (d < p.r && d > 0.0001) {
+    p.x += nx / d * (p.r - d);
+    p.y += ny / d * (p.r - d);
+  }
+}
+
+// ---------- Fin de niveau ----------
+function levelClear() {
+  sfx.next();
+  S.score += 250 + S.level * 50;
+  S.totalOrbsCollected += S.orbsTaken;
+  updateHUD();
+
+  // Victoire : la Première Voix au terme de la strate 10
+  if (S.level >= GAME_END_LEVEL) {
+    S.score += 1500;
+    if (S.score > S.best) {
+      S.best = S.score;
+      try { localStorage.setItem("echo_best", String(S.best)); } catch (e) {}
+    }
+    stopAmbient();
+    startCine(CINE_FIN, function () {
+      S.mode = "over";
+      const q1 = document.getElementById("endQuote1");
+      const q2 = document.getElementById("endQuote2");
+      if (q1) q1.textContent = ENDING_TXT[0];
+      if (q2) q2.textContent = ENDING_TXT[1];
+      const es = document.getElementById("endStats");
+      if (es) es.innerHTML =
+        "Score final : <b>" + S.score + "</b>  •  Orbes : <b>" + S.totalOrbsCollected + "</b><br>" +
+        "Temps de l'expédition : <b>" + fmtTime(S.timeAlive) + "</b><br>" +
+        "Spectres démasqués : <b>" + S.spotCount + "</b>  •  Distance : <b>" + Math.round(S.distM) + " m</b><br>" +
+        "Vies restantes : <b>" + S.player.lives + "</b>  •  Meilleur score : <b>" + S.best + "</b>";
+      hideAllScreens();
+      const se = document.getElementById("screenEnd");
+      if (se) se.classList.remove("hidden");
+    });
+    return;
+  }
+
+  const st = strateOf(S.level);
+  const ld = document.getElementById("lvlDone");
+  if (ld) ld.textContent = S.level;
+  const lm = document.getElementById("lvlMsg");
+  if (lm) lm.textContent =
+    "Score : " + S.score + "  •  Orbes récoltés : " + S.totalOrbsCollected + "  •  Vies restantes : " + S.player.lives +
+    "  •  Temps : " + fmtTime(S.timeAlive) + "  •  Spectres démasqués : " + S.spotCount + "  •  Distance : " + Math.round(S.distM) + " m";
+  const ll = document.getElementById("lvlLore");
+  if (ll) {
+    const nextSt = strateOf(S.level + 1);
+    ll.textContent = "En dessous : " + nextSt.name + ". " + nextSt.lore;
+  }
+  hideAllScreens();
+  const sl = document.getElementById("screenLevel");
+  if (sl) sl.classList.remove("hidden");
+  S.mode = "levelClear";
+  updateHUD();
+}
+
+// ---------- Rendu ----------
+function render() {
+  const st = strateOf(S.level);
+  ctx.fillStyle = "#05060a";
+  ctx.fillRect(0, 0, W, H);
+
+  // Fond vivant : gradient + respiration
+  const bg = ctx.createRadialGradient(W / 2, H * 0.45, 10, W / 2, H * 0.45, Math.max(W, H) * 0.75);
+  const breathe = 0.04 + 0.02 * Math.sin(S.time * 0.7);
+  bg.addColorStop(0, "rgba(" + st.wall.replace(/ /g, "") + "," + breathe.toFixed(3) + ")");
+  bg.addColorStop(1, "#05060a");
+  ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+
+  // Poussière en suspension
+  ctx.save();
+  for (let i = 0; i < S.motes.length; i++) {
+    const m = S.motes[i];
+    ctx.globalAlpha = 0.05 + 0.08 * (0.5 + 0.5 * Math.sin(m.tw));
+    ctx.fillStyle = "rgba(" + st.ping.replace(/ /g, "") + ",1)";
+    ctx.beginPath(); ctx.arc(m.x, m.y, m.s, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.restore();
+
+  if (S.mode === "cine") { renderCine(); return; }
+  if (S.mode === "menu" || !S.cells) {
+    renderMenuBackground(st);
+    return;
+  }
+
+  const shx = (Math.random() - 0.5) * S.shake * 14;
+  const shy = (Math.random() - 0.5) * S.shake * 14;
+  ctx.save();
+  ctx.translate(shx, shy);
+
+  // Murs éclairés (couleur de la strate)
+  ctx.lineCap = "round";
+  const cw = S.cw, ch = S.ch;
+  const stWall = st.wall.replace(/ /g, "");
+  const stPing = st.ping.replace(/ /g, "");
+  for (let cy2 = 0; cy2 < ch; cy2++) for (let cx2 = 0; cx2 < cw; cx2++) {
+    const L = S.light[cy2 * cw + cx2];
+    if (L < 0.02) continue;
+    const x0 = S.ox + cx2 * S.cellSize, y0 = S.oy + cy2 * S.cellSize;
+    const x1 = x0 + S.cellSize, y1 = y0 + S.cellSize;
+    const w = S.cells[cy2 * cw + cx2];
+    ctx.lineWidth = 3.5;
+    ctx.strokeStyle = "rgba(" + stWall + "," + (0.9 * L).toFixed(3) + ")";
+    ctx.shadowColor = "rgba(" + stWall + "," + (0.8 * L).toFixed(3) + ")";
+    ctx.shadowBlur = 12 * L;
+    ctx.beginPath();
+    if (w.n) { ctx.moveTo(x0, y0); ctx.lineTo(x1, y0); }
+    if (w.s) { ctx.moveTo(x0, y1); ctx.lineTo(x1, y1); }
+    if (w.w) { ctx.moveTo(x0, y0); ctx.lineTo(x0, y1); }
+    if (w.e) { ctx.moveTo(x1, y0); ctx.lineTo(x1, y1); }
+    ctx.stroke();
+  }
+  ctx.shadowBlur = 0;
+
+  // Fronts d'onde
+  for (let i = 0; i < S.pings.length; i++) {
+    const pg = S.pings[i];
+    const alpha = 0.5 * Math.max(0, 1 - pg.r / PING_MAX_R);
+    if (alpha <= 0.01) continue;
+    ctx.strokeStyle = pg.pulse || pg.gold
+      ? "rgba(255,209,102," + alpha.toFixed(3) + ")"
+      : "rgba(" + stPing + "," + alpha.toFixed(3) + ")";
+    ctx.lineWidth = pg.pulse ? 4 : 2.5;
+    ctx.beginPath(); ctx.arc(pg.x, pg.y, pg.r, 0, Math.PI * 2); ctx.stroke();
+  }
+
+  // Sortie + flèche indicatrice quand ouverte
+  const ex = S.exit;
+  if (ex) {
+    const L = S.light[ex.cy * cw + ex.cx] + 0.4;
+    const pu = 0.5 + 0.5 * Math.sin(ex.pulse * 4);
+    ctx.beginPath(); ctx.arc(ex.x, ex.y, 14 + pu * 3, 0, Math.PI * 2);
+    if (ex.open) {
+      ctx.fillStyle = "rgba(255,209,102," + Math.min(1, 0.75 * L).toFixed(3) + ")";
+      ctx.shadowColor = "rgba(255,209,102,.9)"; ctx.shadowBlur = 24;
+      ctx.fill();
+    } else {
+      ctx.strokeStyle = "rgba(150,150,170," + Math.min(1, 0.7 * L).toFixed(3) + ")";
+      ctx.lineWidth = 3; ctx.stroke();
+    }
+    ctx.shadowBlur = 0;
+    if (ex.open) {
+      const p = S.player;
+      const dx = ex.x - p.x, dy = ex.y - p.y;
+      if (Math.hypot(dx, dy) > S.cellSize * 2) {
+        const a = Math.atan2(dy, dx);
+        ctx.save();
+        ctx.translate(p.x + Math.cos(a) * 34, p.y + Math.sin(a) * 34);
+        ctx.rotate(a);
+        const tw = 0.5 + 0.5 * Math.sin(S.time * 5);
+        ctx.fillStyle = "rgba(255,209,102," + (0.3 + 0.4 * tw).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.moveTo(9, 0); ctx.lineTo(-5, -6); ctx.lineTo(-5, 6);
+        ctx.closePath(); ctx.fill();
+        ctx.restore();
+      }
+    }
+  }
+
+  // Bonus
+  for (let i = 0; i < S.pickups.length; i++) {
+    const kk = S.pickups[i];
+    const c = cellOf(kk.x, kk.y);
+    let L = 0.5;
+    if (c.cx >= 0 && c.cy >= 0 && c.cx < cw && c.cy < ch) L = Math.max(0.5, S.light[c.cy * cw + c.cx]);
+    const wob = Math.sin(kk.t * 2.6) * 4;
+    ctx.beginPath(); ctx.arc(kk.x, kk.y + wob, 8, 0, Math.PI * 2);
+    if (kk.type === "echo") {
+      ctx.fillStyle = "rgba(93,255,176," + (0.9 * L).toFixed(3) + ")";
+      ctx.shadowColor = "rgba(93,255,176,1)";
+    } else {
+      ctx.fillStyle = "rgba(255,93,122," + (0.9 * L).toFixed(3) + ")";
+      ctx.shadowColor = "rgba(255,93,122,1)";
+    }
+    ctx.shadowBlur = 16 * L;
+    ctx.fill(); ctx.shadowBlur = 0;
+    ctx.strokeStyle = "rgba(5,6,10,.9)"; ctx.lineWidth = 2;
+    ctx.beginPath();
+    if (kk.type === "echo") {
+      ctx.arc(kk.x, kk.y + wob, 3.5, 0, Math.PI * 2);
+    } else {
+      ctx.moveTo(kk.x, kk.y - 3 + wob); ctx.lineTo(kk.x, kk.y + 4 + wob);
+      ctx.moveTo(kk.x - 3.5, kk.y - 0.5 + wob); ctx.lineTo(kk.x + 3.5, kk.y - 0.5 + wob);
+    }
+    ctx.stroke();
+  }
+
+  // Orbes
+  for (let i = 0; i < S.orbs.length; i++) {
+    const o = S.orbs[i];
+    if (o.taken) continue;
+    const c = cellOf(o.x, o.y);
+    let L = 0;
+    if (c.cx >= 0 && c.cy >= 0 && c.cx < cw && c.cy < ch) L = S.light[c.cy * cw + c.cx];
+    // Les orbes spéciaux gardent leur propre lueur (le chip fuit, on ne doit pas le perdre de vue)
+    if (o.kind) L = Math.max(0.38, L);
+    if (L < 0.03) continue;
+    const wob = Math.sin(o.t * 3) * 3;
+    const ocol = o.kind === "cri" ? "150,160,255" : o.kind === "leurre" ? "255,209,102" : o.kind === "chip" ? "93,255,176" : "70,230,255";
+    const orad = o.kind === "chip" ? ORB_R - 2 + Math.sin(o.t * 8) : ORB_R;
+    ctx.beginPath(); ctx.arc(o.x, o.y + wob, orad, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(" + ocol + "," + (0.9 * L).toFixed(3) + ")";
+    ctx.shadowColor = "rgba(" + ocol + ",1)"; ctx.shadowBlur = 18 * L;
+    ctx.fill(); ctx.shadowBlur = 0;
+    // Marqueur de type
+    if (o.kind === "cri" || o.kind === "leurre") {
+      ctx.beginPath();
+      ctx.arc(o.x, o.y + wob, ORB_R + 5 + Math.sin(o.t * (o.kind === "cri" ? 9 : 5)) * 2, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(" + ocol + "," + (0.5 * L).toFixed(3) + ")";
+      ctx.lineWidth = 1.5; ctx.stroke();
+    }
+  }
+
+  // Particules
+  for (let i = 0; i < S.parts.length; i++) {
+    const pt = S.parts[i];
+    ctx.fillStyle = "rgba(" + pt.col + "," + Math.max(0, pt.life).toFixed(3) + ")";
+    ctx.fillRect(pt.x - 2, pt.y - 2, 4, 4);
+  }
+
+  // Spectres (deux espèces)
+  const p = S.player;
+  for (let i = 0; i < S.enemies.length; i++) {
+    const en = S.enemies[i];
+    const c = cellOf(en.x, en.y);
+    let L = 0;
+    if (c.cx >= 0 && c.cy >= 0 && c.cx < cw && c.cy < ch) L = S.light[c.cy * cw + c.cx];
+    const d = Math.hypot(en.x - p.x, en.y - p.y);
+    const prox = Math.max(0, 1 - d / (S.cellSize * 2.6)) * 0.8;
+    const vis = Math.max(L, prox);
+    if (vis < 0.04) continue;
+    const wob = Math.sin(en.wob) * 2;
+    const isSent = en.type === "sentinel";
+    const bodyCol = en.stun > 0 ? "180,180,220" : isSent ? "139,123,255" : "255,93,122";
+    if (en.stun > 0) {
+      for (let s = 0; s < 3; s++) {
+        const a = en.wob * 2 + s * 2.1;
+        ctx.fillStyle = "rgba(255,209,102," + (0.9 * vis).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(en.x + Math.cos(a) * 16, en.y - 14 + Math.sin(a) * 6, 2.2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    } else if (en.alert > 0 || en.lock > 0) {
+      ctx.beginPath(); ctx.arc(en.x, en.y, 20 + Math.sin(en.wob * 4) * 3, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(" + bodyCol + "," + (0.5 * vis).toFixed(3) + ")";
+      ctx.lineWidth = 2; ctx.stroke();
+      // Œil de verrouillage de la Sentinelle
+      if (en.lock > 0) {
+        const la = Math.min(1, en.lock) * (0.6 + 0.4 * Math.sin(S.time * 10));
+        ctx.strokeStyle = "rgba(255,209,102," + (la).toFixed(3) + ")";
+        ctx.lineWidth = 1.5;
+        const rr = 26 + Math.sin(S.time * 10) * 2;
+        ctx.beginPath();
+        ctx.moveTo(en.x, en.y - rr); ctx.lineTo(en.x + rr * 0.7, en.y);
+        ctx.lineTo(en.x, en.y + rr); ctx.lineTo(en.x - rr * 0.7, en.y);
+        ctx.closePath(); ctx.stroke();
+        ctx.fillStyle = "rgba(255,209,102," + la.toFixed(3) + ")";
+        ctx.beginPath(); ctx.arc(en.x, en.y, 2.5, 0, Math.PI * 2); ctx.fill();
+      }
+      // Nom du Spectre au-dessus, révélé par la lueur
+      ctx.globalAlpha = Math.min(1, vis * 1.2) * Math.min(1, Math.max(en.alert, en.lock || 0) * (en.lock > 0 ? 1 : 1));
+      ctx.font = "italic 11px 'Segoe UI', sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillStyle = "rgba(" + bodyCol + ",.95)";
+      ctx.fillText(en.name, en.x, en.y - 30);
+      ctx.globalAlpha = 1;
+    }
+    // Traînée spectrale derrière lui
+    for (let t3 = en.trail.length - 1; t3 >= 0; t3--) {
+      const tr2 = en.trail[t3];
+      ctx.globalAlpha = Math.max(0, tr2.life) * 0.3 * vis;
+      ctx.fillStyle = "rgba(" + bodyCol + ",1)";
+      ctx.beginPath(); ctx.arc(tr2.x, tr2.y, 9 * (tr2.life / 0.5) + 2, 0, Math.PI * 2); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+
+    // Aura
+    ctx.beginPath(); ctx.arc(en.x, en.y, 24, 0, Math.PI * 2);
+    const aura = ctx.createRadialGradient(en.x, en.y, 4, en.x, en.y, 24);
+    aura.addColorStop(0, "rgba(" + bodyCol + "," + (0.25 * vis).toFixed(3) + ")");
+    aura.addColorStop(1, "rgba(" + bodyCol + ",0)");
+    ctx.fillStyle = aura; ctx.fill();
+
+    // Corps : cape à chevilles ondulantes + dégradé
+    const bodyGrad = ctx.createRadialGradient(en.x, en.y - 4, 2, en.x, en.y + 4, 16);
+    bodyGrad.addColorStop(0, "rgba(255,255,255," + (0.9 * vis).toFixed(3) + ")");
+    bodyGrad.addColorStop(0.45, "rgba(" + bodyCol + "," + (0.9 * vis).toFixed(3) + ")");
+    bodyGrad.addColorStop(1, "rgba(" + bodyCol.replace(/,\s*/, ",") + ",0.05)");
+    ctx.beginPath();
+    ctx.moveTo(en.x, en.y - 14 + wob);
+    ctx.quadraticCurveTo(en.x + 15, en.y - 4, en.x + 12, en.y + 12);
+    if (!isSent) {
+      // chevilles ondulantes du bas
+      ctx.quadraticCurveTo(en.x + 10, en.y + 16 + Math.sin(en.wob * 2) * 3, en.x + 6, en.y + 13);
+      ctx.quadraticCurveTo(en.x + 3, en.y + 17 + Math.cos(en.wob * 2.3) * 3, en.x, en.y + 13);
+      ctx.quadraticCurveTo(en.x - 3, en.y + 17 + Math.sin(en.wob * 2.5 + 2) * 3, en.x - 6, en.y + 13);
+      ctx.quadraticCurveTo(en.x - 10, en.y + 16 - Math.sin(en.wob * 2) * 3, en.x - 12, en.y + 12);
+    } else {
+      ctx.lineTo(en.x - 12, en.y + 12);
+    }
+    ctx.quadraticCurveTo(en.x - 15, en.y - 4, en.x, en.y - 14 + wob);
+    ctx.fillStyle = bodyGrad;
+    ctx.shadowColor = "rgba(" + bodyCol + ",1)"; ctx.shadowBlur = 18 * vis;
+    ctx.fill(); ctx.shadowBlur = 0;
+    // Yeux ronds ou œil unique brillant
+    ctx.fillStyle = "rgba(10,5,15," + (0.9 * vis).toFixed(3) + ")";
+    if (isSent) {
+      ctx.beginPath(); ctx.arc(en.x, en.y - 3, 3 + Math.sin(en.wob * 5) * 0.6, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = "rgba(255,209,102," + (0.9 * vis).toFixed(3) + ")";
+      ctx.beginPath(); ctx.arc(en.x, en.y - 3, 1.1, 0, Math.PI * 2); ctx.fill();
+    } else {
+      ctx.beginPath();
+      ctx.arc(en.x - 4, en.y - 3, 2.2, 0, Math.PI * 2);
+      ctx.arc(en.x + 4, en.y - 3, 2.2, 0, Math.PI * 2);
+      ctx.fill();
+      // reflet de danger dans les yeux quand il chasse
+      if (en.alert > 0) {
+        ctx.fillStyle = "rgba(255,220,220," + (0.7 * vis).toFixed(3) + ")";
+        ctx.beginPath();
+        ctx.arc(en.x - 4.6, en.y - 3.6, 0.7, 0, Math.PI * 2);
+        ctx.arc(en.x + 3.4, en.y - 3.6, 0.7, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+  }
+
+  // Traînée de l'Écouteuse
+  for (let i = 0; i < S.trail.length; i++) {
+    const tr = S.trail[i];
+    ctx.globalAlpha = Math.max(0, tr.life) * 0.25;
+    ctx.fillStyle = "rgba(240,250,255,1)";
+    ctx.beginPath(); ctx.arc(tr.x, tr.y, p.r * 0.7, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  // Empreintes de lumière (s'estompent avec le temps)
+  for (let i2 = 0; i2 < S.footprints.length; i2++) {
+    const fp = S.footprints[i2];
+    const fa = Math.max(0, fp.life) * (fp.silent ? 0.12 : 0.3);
+    ctx.globalAlpha = fa;
+    ctx.fillStyle = "rgba(200,240,255,1)";
+    ctx.beginPath();
+    ctx.ellipse(fp.x + Math.cos(fp.a + Math.PI / 2) * 3, fp.y + Math.sin(fp.a + Math.PI / 2) * 3, 2.2, 1.1, fp.a, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+
+  // Joueur : l'Écouteuse, silhouette encapuchonnée orientée vers sa direction
+  const inv = p.inv > 0 && Math.floor(S.time * 10) % 2 === 0;
+  const faceA = Math.atan2(p.fy, p.fx);
+  // aura douce
+  const pa = ctx.createRadialGradient(p.x, p.y, 2, p.x, p.y, 26);
+  pa.addColorStop(0, "rgba(200,240,255," + (inv ? 0.08 : 0.22).toFixed(3) + ")");
+  pa.addColorStop(1, "rgba(200,240,255,0)");
+  ctx.fillStyle = pa;
+  ctx.beginPath(); ctx.arc(p.x, p.y, 26, 0, Math.PI * 2); ctx.fill();
+  // cape : goutte orientée, arrière effilé
+  ctx.save();
+  ctx.translate(p.x, p.y);
+  ctx.rotate(faceA);
+  ctx.beginPath();
+  ctx.moveTo(p.r + 1, 0);
+  ctx.quadraticCurveTo(p.r - 2, -p.r + 1, -p.r + 2, -p.r * 0.25);
+  ctx.quadraticCurveTo(-p.r - 6, 0, -p.r + 2, p.r * 0.25);
+  ctx.quadraticCurveTo(p.r - 2, p.r - 1, p.r + 1, 0);
+  ctx.fillStyle = inv ? "rgba(255,255,255,.25)" : "rgba(240,250,255,.95)";
+  ctx.shadowColor = "rgba(200,240,255,.9)"; ctx.shadowBlur = 20;
+  ctx.fill(); ctx.shadowBlur = 0;
+  // capuche : sombre à l'avant, comme un visage sans yeux
+  ctx.beginPath();
+  ctx.arc(3, 0, p.r * 0.55, 0, Math.PI * 2);
+  ctx.fillStyle = "rgba(10,15,30," + (inv ? 0.2 : 0.85).toFixed(3) + ")";
+  ctx.fill();
+  ctx.restore();
+  // Anneau de charges sonar : un arc par charge disponible
+  const chCount = Math.floor(S.energy);
+  const part = S.energy - chCount;
+  for (let ci = 0; ci < PINGS_MAX; ci++) {
+    const a0 = -Math.PI / 2 + (ci / PINGS_MAX) * Math.PI * 2 + 0.18;
+    const a1 = -Math.PI / 2 + ((ci + 1) / PINGS_MAX) * Math.PI * 2 - 0.18;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r + 6, a0, a1);
+    if (ci < chCount) { ctx.strokeStyle = "rgba(70,230,255,.7)"; ctx.lineWidth = 2; }
+    else if (ci === chCount && part > 0.05) { ctx.strokeStyle = "rgba(70,230,255,.2)"; ctx.lineWidth = 2; }
+    else { ctx.strokeStyle = "rgba(255,255,255,.08)"; ctx.lineWidth = 1; }
+    ctx.stroke();
+  }
+
+  // Anneau du pouls prêt
+  if (S.pulseCharge >= 1) {
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.r + 10, 0, Math.PI * 2);
+    ctx.strokeStyle = "rgba(255,209,102,.45)"; ctx.lineWidth = 1.5; ctx.stroke();
+  }
+
+  ctx.restore();
+
+  // Vignette
+  const g = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
+  g.addColorStop(0, "rgba(0,0,0,0)");
+  g.addColorStop(1, "rgba(0,0,0,.55)");
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, W, H);
+
+  // Vignette de danger (couleur de la strate)
+  if (S.danger > 0.02) {
+    const dp = 0.5 + 0.5 * Math.sin(S.time * (4 + S.danger * 6));
+    const dg2 = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.3, W / 2, H / 2, Math.max(W, H) * 0.7);
+    dg2.addColorStop(0, "rgba(0,0,0,0)");
+    dg2.addColorStop(1, "rgba(" + st.dangerCol.replace(/ /g, "") + "," + (0.28 * S.danger * dp).toFixed(3) + ")");
+    ctx.fillStyle = dg2;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  // Voile rouge de la mort au ralenti
+  if (S.mode === "dying") {
+    const da = Math.min(0.7, (1.1 - S.dyingT) * 0.25 + 0.15);
+    ctx.fillStyle = "rgba(120,10,30," + da.toFixed(3) + ")";
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  // Message flottant
+  if (S.messageT > 0 && S.message) {
+    ctx.globalAlpha = Math.min(1, S.messageT);
+    ctx.font = "600 22px 'Segoe UI', sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#cfeaff";
+    ctx.fillText(S.message, W / 2, H * 0.16);
+    ctx.globalAlpha = 1;
+  }
+
+  // Cartouche d'intro de strate (fondu simple)
+  if (S.introT > 0) {
+    const a = Math.min(1, S.introT) * Math.min(1, (3.5 - S.introT) * 2);
+    ctx.globalAlpha = a;
+    ctx.textAlign = "center";
+    ctx.font = "300 24px 'Segoe UI', sans-serif";
+    ctx.fillStyle = "rgb(" + st.wall.replace(/ /g, "") + ")";
+    ctx.fillText("STRATE " + S.level + " — " + st.name.toUpperCase(), W / 2, H * 0.30);
+    ctx.font = "italic 15px 'Segoe UI', sans-serif";
+    ctx.fillStyle = "rgba(232,241,255,.75)";
+    ctx.fillText(st.lore, W / 2, H * 0.30 + 30);
+    ctx.globalAlpha = 1;
+  }
+}
+
+// Fond animé de l'écran-titre : la Faille respire, un Spectre rôde
+let menuT = 0;
+const menuMotes = [];
+for (let i = 0; i < 50; i++) {
+  menuMotes.push({ x: Math.random(), y: Math.random(), s: 0.5 + Math.random() * 1.5, tw: Math.random() * 6 });
+}
+function renderMenuBackground(st) {
+  menuT += 0.016;
+  const cx = W / 2, cy = H * 0.42;
+  // Spectre en patrouille au fond
+  const gx = cx + Math.cos(menuT * 0.25) * Math.min(W, H) * 0.28;
+  const gy = cy + Math.sin(menuT * 0.4) * Math.min(W, H) * 0.12;
+  // Poussière
+  ctx.save();
+  for (let i = 0; i < menuMotes.length; i++) {
+    const m = menuMotes[i];
+    ctx.globalAlpha = 0.04 + 0.08 * (0.5 + 0.5 * Math.sin(m.tw + menuT * 2));
+    ctx.fillStyle = "rgba(120,200,255,1)";
+    ctx.beginPath(); ctx.arc(m.x * W, (m.y + menuT * 0.004) % 1 * H, m.s, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.restore();
+  // Spectre en patrouille au fond (style du jeu : aura, dégradé, yeux brillants)
+  const wob = Math.sin(menuT * 3) * 3;
+  const alpha = 0.35 + 0.2 * Math.sin(menuT * 0.9);
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  const aura = ctx.createRadialGradient(gx, gy - 8, 4, gx, gy - 8, 60);
+  aura.addColorStop(0, "rgba(255,93,122," + (0.3 * alpha).toFixed(3) + ")");
+  aura.addColorStop(1, "rgba(255,93,122,0)");
+  ctx.fillStyle = aura;
+  ctx.beginPath(); ctx.arc(gx, gy - 8, 60, 0, Math.PI * 2); ctx.fill();
+  const bodyGrad = ctx.createRadialGradient(gx, gy - 4, 2, gx, gy + 4, 28);
+  bodyGrad.addColorStop(0, "rgba(255,240,245," + (0.9 * alpha).toFixed(3) + ")");
+  bodyGrad.addColorStop(0.45, "rgba(255,93,122," + (0.9 * alpha).toFixed(3) + ")");
+  bodyGrad.addColorStop(1, "rgba(255,93,122,0.05)");
+  ctx.beginPath();
+  ctx.moveTo(gx, gy - 24 + wob);
+  ctx.quadraticCurveTo(gx + 22, gy - 8, gx + 16, gy + 20);
+  ctx.quadraticCurveTo(gx + 11, gy + 25 + Math.sin(menuT * 2) * 3, gx + 7, gy + 21);
+  ctx.quadraticCurveTo(gx + 3, gy + 26 + Math.cos(menuT * 2.3) * 3, gx, gy + 21);
+  ctx.quadraticCurveTo(gx - 3, gy + 26 + Math.sin(menuT * 2.5 + 2) * 3, gx - 7, gy + 21);
+  ctx.quadraticCurveTo(gx - 11, gy + 25 - Math.sin(menuT * 2) * 3, gx - 16, gy + 20);
+  ctx.quadraticCurveTo(gx - 22, gy - 8, gx, gy - 24 + wob);
+  ctx.fillStyle = bodyGrad;
+  ctx.shadowColor = "rgba(255,93,122,1)"; ctx.shadowBlur = 34;
+  ctx.fill(); ctx.shadowBlur = 0;
+  ctx.fillStyle = "rgba(10,5,15,.9)";
+  ctx.beginPath();
+  ctx.arc(gx - 7, gy - 6, 3.5, 0, Math.PI * 2);
+  ctx.arc(gx + 7, gy - 6, 3.5, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = "rgba(255,120,140," + (0.9 * alpha).toFixed(3) + ")";
+  ctx.beginPath();
+  ctx.arc(gx - 7, gy - 6, 1.3, 0, Math.PI * 2);
+  ctx.arc(gx + 7, gy - 6, 1.3, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+  // Ondes de sonar
+  for (let k = 0; k < 3; k++) {
+    const r = ((menuT * 120 + k * 260) % 800) + 20;
+    const a = Math.max(0, 0.25 * (1 - r / 820));
+    ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.strokeStyle = "rgba(70,230,255," + a.toFixed(3) + ")";
+    ctx.lineWidth = 2; ctx.stroke();
+  }
+}
+
+// ---------- HUD ----------
+function updateHUD() {
+  const hl = document.getElementById("hudLevel");
+  if (hl) hl.textContent = S.level;
+  const hs = document.getElementById("hudStrate");
+  if (hs) hs.textContent = strateOf(S.level).name;
+  const ho = document.getElementById("hudOrbs");
+  if (ho) ho.textContent = S.orbsTaken + "/" + S.orbsTotal;
+  const h = document.getElementById("hearts");
+  const lives = S.player ? S.player.lives : 3;
+  if (h) {
+    let html = "";
+    for (let i = 0; i < 3; i++) {
+      html += '<svg class="heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.7-10-9.3C.4 8 2.4 4.5 6 4.5c2.2 0 3.8 1.2 6 3.6 2.2-2.4 3.8-3.6 6-3.6 3.6 0 5.6 3.5 4 7.2C19.5 16.3 12 21 12 21z" fill="' +
+        (i < lives ? "#ff5d7a" : "rgba(255,255,255,.15)") + '"/></svg>';
+    }
+    h.innerHTML = html;
+  }
+  const ef = document.getElementById("energyFill");
+  if (ef) ef.style.width = (S.energy / PINGS_MAX * 100) + "%";
+  const pf = document.getElementById("pulseFill");
+  if (pf) pf.style.width = (S.pulseCharge * 100) + "%";
+}
+
+setInterval(function () {
+  if (S.mode !== "play") return;
+  const ef = document.getElementById("energyFill");
+  if (ef) ef.style.width = (S.energy / PINGS_MAX * 100) + "%";
+  const pf = document.getElementById("pulseFill");
+  if (pf) pf.style.width = (S.pulseCharge * 100) + "%";
+}, 120);
+
+// ---------- Démarrage ----------
+function startGame(level, keepLives, fullReset) {
+  try {
+    S.level = level;
+    if (fullReset) { S.score = 0; }
+    if (!keepLives) S.totalOrbsCollected = 0;
+    if (!keepLives) { S.timeAlive = 0; S.spotCount = 0; S.distM = 0; }
+    const lives = (keepLives && S.player) ? S.player.lives : 3;
+    joy.active = false; joy.dx = 0; joy.dy = 0;
+    for (const idStr in touches) delete touches[idStr];
+    S.energy = PINGS_MAX;
+    S.pulseCharge = 1;
+    S.danger = 0;
+    buildLevel(level);
+    if (S.player) S.player.lives = Math.max(1, Math.min(3, lives));
+    S.mode = "play";
+    S.inputGrace = 0.35;
+    updateHUD();
+    startAmbient();
+    S.pings.push({ x: S.player.x, y: S.player.y, r: 0, alive: true });
+    const hud = document.getElementById("hud");
+    if (hud) hud.style.visibility = "visible";
+  } catch (err) {
+    console.error("ÉCHO buildLevel error:", err);
+    S.mode = S.player ? "play" : "menu";
+    S.inputGrace = 0.35;
+    if (S.mode === "menu") {
+      const ss2 = document.getElementById("screenStart");
+      if (ss2) ss2.classList.remove("hidden");
+    }
+    updateHUD();
+  }
+}
+
+// Meilleur score sur l'écran-titre
+try {
+  if (S.best > 0) {
+    const bsl = document.getElementById("bestScoreLine");
+    if (bsl) bsl.style.display = "block";
+    const bs = document.getElementById("bestScore");
+    if (bs) bs.textContent = S.best;
+  }
+} catch (e) {}
+
+resize();
+</script>
+</body>
+</html>
